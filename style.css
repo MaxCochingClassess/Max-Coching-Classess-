@@ -19,3 +19,397 @@ footer{border-top:1px solid #211e17;padding:25px 0;color:#77736a;font-size:11px}
 @media(max-width:850px){.nav-links{display:none;position:absolute;top:76px;left:0;right:0;background:#090908;padding:20px;flex-direction:column;border-bottom:1px solid var(--line)}.nav-links.open{display:flex}.menu-btn{display:block}.hero{padding:75px 0}.hero-grid,.split,.online-box,.contact-grid{grid-template-columns:1fr}.hero-card{order:-1;max-width:430px}.cards{grid-template-columns:1fr 1fr}.faculty-grid{grid-template-columns:1fr}.section{padding:75px 0}.split{gap:30px}.footer{flex-direction:column}}
 @media(max-width:520px){.cards{grid-template-columns:1fr}.hero h1{font-size:52px}.stats{display:grid;grid-template-columns:1fr 1fr}.online-box{padding:28px}.hero-buttons{flex-direction:column}.btn{width:100%}}
 
+/* =================================================
+   MAX KIDS STUDY SECTION
+================================================= */
+
+.study-section{
+  background:#090807;
+  padding:90px 20px;
+  border-top:1px solid #282218;
+}
+
+.study-container{
+  max-width:1200px;
+  margin:auto;
+}
+
+.study-title{
+  text-align:center;
+  margin-bottom:35px;
+}
+
+.study-title p{
+  color:#d8ad43;
+  letter-spacing:4px;
+  font-size:11px;
+  font-weight:800;
+}
+
+.study-title h2{
+  color:#fff;
+  font-family:"Playfair Display",serif;
+  font-size:42px;
+  margin:10px 0;
+}
+
+.study-title span{
+  color:#aaa49a;
+  font-size:15px;
+}
+
+.study-menu{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-bottom:60px;
+}
+
+.study-menu a{
+  color:#e9d18c;
+  background:#12100c;
+  border:1px solid #3a3120;
+  padding:11px 17px;
+  border-radius:30px;
+  text-decoration:none;
+  font-size:12px;
+  font-weight:bold;
+  transition:.3s;
+}
+
+.study-menu a:hover{
+  background:#d8ad43;
+  color:#080706;
+}
+
+.study-box{
+  margin:70px 0;
+}
+
+.study-heading{
+  margin-bottom:28px;
+}
+
+.study-heading small{
+  color:#d8ad43;
+  letter-spacing:3px;
+  font-weight:bold;
+  font-size:10px;
+}
+
+.study-heading h3{
+  color:white;
+  font-family:"Playfair Display",serif;
+  font-size:32px;
+  margin:7px 0;
+}
+
+.study-heading p{
+  color:#99948a;
+  font-size:14px;
+}
+
+
+/* TABLES */
+
+.table-grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:10px;
+}
+
+.table-card{
+  background:#12100c;
+  border:1px solid #30291d;
+  border-radius:10px;
+  padding:15px 8px;
+  text-align:center;
+}
+
+.table-card strong{
+  display:block;
+  color:#e2b84d;
+  margin-bottom:7px;
+}
+
+.table-card span{
+  color:#c4beb1;
+  font-size:11px;
+  line-height:1.7;
+}
+
+
+/* MATH */
+
+.math-cards{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:15px;
+}
+
+.math-card{
+  background:#12100c;
+  border:1px solid #30291d;
+  border-radius:12px;
+  padding:25px;
+  text-align:center;
+}
+
+.math-card div{
+  font-size:35px;
+}
+
+.math-card h4{
+  color:#e2b84d;
+  font-size:20px;
+}
+
+.math-card p{
+  color:#d0cabd;
+  margin:7px;
+}
+
+.small-table-box{
+  margin-top:35px;
+  background:#0e0d0a;
+  border:1px solid #30291d;
+  border-radius:12px;
+  padding:25px;
+}
+
+.small-table-box h3{
+  color:#e2b84d;
+}
+
+.small-table-grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:10px;
+}
+
+.small-table{
+  background:#15130f;
+  border:1px solid #30291d;
+  border-radius:8px;
+  padding:12px;
+  color:#d0cabd;
+  text-align:center;
+  font-size:12px;
+  line-height:1.7;
+}
+
+.small-table b{
+  color:#e2b84d;
+  display:block;
+  margin-bottom:5px;
+}
+
+
+/* HINDI */
+
+.hindi-grid{
+  display:grid;
+  grid-template-columns:repeat(7,1fr);
+  gap:10px;
+}
+
+.hindi-card{
+  min-height:105px;
+  background:#12100c;
+  border:1px solid #30291d;
+  border-radius:10px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:10px;
+}
+
+.hindi-card b{
+  color:#e2b84d;
+  font-family:"Noto Sans Devanagari","Nirmala UI",sans-serif;
+  font-size:30px;
+}
+
+.hindi-card span{
+  color:#c8c1b2;
+  font-size:11px;
+  margin-top:8px;
+}
+
+
+/* MATRAYEN */
+
+.matra-section{
+  background:#11100c;
+  border:1px solid #30291d;
+  border-radius:12px;
+  padding:25px;
+  margin-top:25px;
+}
+
+.matra-section h3{
+  color:#e2b84d;
+}
+
+.matra-grid{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.matra-grid span{
+  color:white;
+  background:#1b1811;
+  border:1px solid #3b321f;
+  padding:10px 15px;
+  border-radius:8px;
+  font-family:"Noto Sans Devanagari","Nirmala UI",sans-serif;
+  font-size:20px;
+}
+
+
+/* COUNTING */
+
+.counting-grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:13px;
+}
+
+.count-card{
+  background:#12100c;
+  border:1px solid #30291d;
+  border-radius:12px;
+  min-height:190px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:15px;
+}
+
+.count-card strong{
+  color:#e2b84d;
+  font-size:32px;
+}
+
+.count-card span{
+  font-size:32px;
+  margin:5px;
+}
+
+.count-card p{
+  font-size:22px;
+  margin:4px;
+}
+
+.count-card b{
+  color:#fff;
+  font-family:"Noto Sans Devanagari","Nirmala UI",sans-serif;
+}
+
+
+/* ENGLISH */
+
+.alphabet-grid{
+  display:grid;
+  grid-template-columns:repeat(7,1fr);
+  gap:10px;
+}
+
+.alpha-card{
+  background:#12100c;
+  border:1px solid #30291d;
+  border-radius:10px;
+  padding:15px;
+  text-align:center;
+}
+
+.alpha-card strong{
+  display:block;
+  color:#e2b84d;
+  font-size:30px;
+}
+
+.alpha-card small{
+  display:block;
+  color:white;
+  font-size:23px;
+  margin-top:4px;
+}
+
+.alpha-card span{
+  color:#8e897e;
+  font-size:9px;
+}
+
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+  .table-grid{
+    grid-template-columns:repeat(3,1fr);
+  }
+
+  .math-cards{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .hindi-grid{
+    grid-template-columns:repeat(5,1fr);
+  }
+
+  .counting-grid{
+    grid-template-columns:repeat(3,1fr);
+  }
+
+  .alphabet-grid{
+    grid-template-columns:repeat(5,1fr);
+  }
+
+}
+
+@media(max-width:550px){
+
+  .study-section{
+    padding:60px 12px;
+  }
+
+  .study-title h2{
+    font-size:30px;
+  }
+
+  .table-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .math-cards{
+    grid-template-columns:1fr;
+  }
+
+  .small-table-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .hindi-grid{
+    grid-template-columns:repeat(3,1fr);
+  }
+
+  .counting-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .alphabet-grid{
+    grid-template-columns:repeat(4,1fr);
+  }
+
+  .study-heading h3{
+    font-size:25px;
+  }
+
+}
