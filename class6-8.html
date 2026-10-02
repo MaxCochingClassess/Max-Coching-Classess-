@@ -17,7 +17,7 @@
 <style>
 
 .study-page{
-  padding:70px 0;
+  padding:60px 0;
 }
 
 .study-intro{
@@ -27,7 +27,7 @@
 }
 
 .study-intro h1{
-  font-size:clamp(32px,5vw,58px);
+  font-size:clamp(34px,6vw,60px);
 }
 
 .study-intro h1 span{
@@ -36,47 +36,68 @@
 
 .subject-menu{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
   gap:14px;
-  margin:40px 0;
+  margin:35px 0;
 }
 
 .subject-menu a{
   text-decoration:none;
-  padding:18px;
-  border-radius:14px;
+  padding:18px 12px;
+  border-radius:15px;
   background:#151515;
-  color:white;
+  color:#fff;
   text-align:center;
   font-weight:700;
+  transition:.2s;
+}
+
+.subject-menu a:hover{
+  transform:translateY(-3px);
 }
 
 .study-box{
-  margin:35px 0;
+  margin:30px 0;
   padding:30px;
   border-radius:22px;
   background:#f7f7f7;
 }
 
-.study-box h2{
-  margin-bottom:10px;
-}
-
-.topic-grid{
+.topic-menu{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:18px;
+  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:15px;
   margin-top:25px;
 }
 
-.topic-card{
-  background:white;
-  padding:22px;
+.topic-link{
+  display:block;
+  text-decoration:none;
+  background:#fff;
+  color:#111;
+  padding:20px;
   border-radius:16px;
+  border:1px solid #ddd;
+  font-weight:700;
+}
+
+.topic-link span{
+  display:block;
+  margin-top:7px;
+  font-size:13px;
+  font-weight:400;
+  color:#666;
+}
+
+.chapter{
+  margin-top:30px;
+  background:#fff;
+  padding:25px;
+  border-radius:18px;
   border:1px solid #ddd;
 }
 
-.topic-card h3{
+.chapter h3{
   margin-top:0;
 }
 
@@ -84,15 +105,27 @@
   background:#fff8e8;
   padding:16px;
   border-radius:12px;
-  margin-top:12px;
+  margin:12px 0;
   line-height:1.8;
+}
+
+.practice{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:15px;
+}
+
+.practice div{
+  background:#f8f8f8;
+  padding:16px;
+  border-radius:12px;
 }
 
 table{
   width:100%;
   border-collapse:collapse;
-  margin-top:20px;
-  background:white;
+  margin:20px 0;
+  background:#fff;
 }
 
 th,td{
@@ -105,13 +138,8 @@ th{
   background:#eee;
 }
 
-.formula{
-  font-size:20px;
-  font-weight:700;
-}
-
 details{
-  background:white;
+  background:#fff;
   border:1px solid #ddd;
   border-radius:12px;
   padding:15px;
@@ -123,30 +151,39 @@ summary{
   font-weight:700;
 }
 
-.poem{
-  line-height:2;
-  font-size:18px;
-  background:#fff8e8;
-  padding:25px;
-  border-radius:18px;
-}
-
 .back-btn{
   display:inline-block;
   margin-bottom:25px;
 }
 
+.poem{
+  background:#fff8e8;
+  padding:25px;
+  border-radius:18px;
+  line-height:2;
+}
+
 @media(max-width:600px){
+
   .study-box{
     padding:18px;
   }
+
+  .chapter{
+    padding:18px;
+  }
+
 }
 
 </style>
 
 </head>
 
+
 <body>
+
+
+<!-- HEADER -->
 
 <header class="header">
 
@@ -186,6 +223,8 @@ summary{
 </a>
 
 
+<!-- INTRO -->
+
 <div class="study-intro">
 
 <div class="section-label">
@@ -199,14 +238,14 @@ CLASS 6–8
 
 <p>
 Class 6, 7 और 8 के विद्यार्थियों के लिए
-English, Maths और Science के Basic Concepts,
-Examples और Practice Material।
+English, Maths और Science का आसान
+chapter-wise study material।
 </p>
 
 </div>
 
 
-<!-- MENU -->
+<!-- SUBJECT MENU -->
 
 <div class="subject-menu">
 
@@ -222,13 +261,616 @@ Examples और Practice Material।
 
 <a href="#physics">⚡ Physics</a>
 
-<a href="#practice">📝 Practice</a>
+</div>
+
+
+
+<!-- ================================================= -->
+<!-- MATHS -->
+<!-- ================================================= -->
+
+<section id="maths" class="study-box">
+
+<div class="section-label">
+MATHEMATICS
+</div>
+
+<h2>➗ Maths — Chapter Wise</h2>
+
+<p>
+जिस chapter को पढ़ना हो उस पर click करें।
+बाद में हर chapter में notes, examples, questions
+और test जोड़े जा सकते हैं।
+</p>
+
+
+<!-- CHAPTER LINKS -->
+
+<div class="topic-menu">
+
+<a class="topic-link" href="#m-number">
+🔢 Number System
+<span>संख्याएँ और उनके प्रकार</span>
+</a>
+
+<a class="topic-link" href="#m-integer">
+➕ Integers
+<span>धनात्मक और ऋणात्मक संख्याएँ</span>
+</a>
+
+<a class="topic-link" href="#m-fraction">
+🍕 Fractions
+<span>भिन्न और उनके operations</span>
+</a>
+
+<a class="topic-link" href="#m-decimal">
+🔢 Decimals
+<span>दशमलव संख्याएँ</span>
+</a>
+
+<a class="topic-link" href="#m-ratio">
+⚖️ Ratio & Proportion
+<span>अनुपात और समानुपात</span>
+</a>
+
+<a class="topic-link" href="#m-percentage">
+💯 Percentage
+<span>प्रतिशत</span>
+</a>
+
+<a class="topic-link" href="#m-profit">
+💰 Profit & Loss
+<span>लाभ और हानि</span>
+</a>
+
+<a class="topic-link" href="#m-discount">
+🏷️ Discount
+<span>छूट</span>
+</a>
+
+<a class="topic-link" href="#m-algebra">
+🔤 Algebra
+<span>बीजगणित की शुरुआत</span>
+</a>
+
+<a class="topic-link" href="#m-equation">
+🟰 Equations
+<span>समीकरण</span>
+</a>
+
+<a class="topic-link" href="#m-line">
+📏 Lines & Angles
+<span>रेखा और कोण</span>
+</a>
+
+<a class="topic-link" href="#m-triangle">
+🔺 Triangle
+<span>त्रिभुज</span>
+</a>
+
+<a class="topic-link" href="#m-quadrilateral">
+⬛ Quadrilateral
+<span>चतुर्भुज</span>
+</a>
+
+<a class="topic-link" href="#m-mensuration">
+📐 Mensuration
+<span>क्षेत्रफल और परिमाप</span>
+</a>
+
+<a class="topic-link" href="#m-data">
+📊 Data Handling
+<span>आँकड़ों का प्रबंधन</span>
+</a>
+
+<a class="topic-link" href="#m-symmetry">
+🪞 Symmetry
+<span>सममिति</span>
+</a>
 
 </div>
 
 
 
-<!-- ================= ENGLISH ================= -->
+<!-- NUMBER SYSTEM -->
+
+<div id="m-number" class="chapter">
+
+<h3>🔢 Number System</h3>
+
+<p>
+संख्याओं को उनके गुणों के आधार पर अलग-अलग प्रकार में समझा जाता है।
+</p>
+
+<div class="example">
+
+Natural Numbers:
+1, 2, 3, 4, 5...
+
+<br><br>
+
+Whole Numbers:
+0, 1, 2, 3, 4...
+
+<br><br>
+
+Prime Numbers:
+2, 3, 5, 7, 11...
+
+<br><br>
+
+Composite Numbers:
+4, 6, 8, 9, 10...
+
+</div>
+
+</div>
+
+
+
+<!-- INTEGER -->
+
+<div id="m-integer" class="chapter">
+
+<h3>➕ Integers</h3>
+
+<div class="example">
+
+... -3, -2, -1, 0, 1, 2, 3 ...
+
+<br><br>
+
+5 + (-2) = 3
+
+<br>
+
+3 - 5 = -2
+
+</div>
+
+</div>
+
+
+
+<!-- FRACTION -->
+
+<div id="m-fraction" class="chapter">
+
+<h3>🍕 Fractions — भिन्न</h3>
+
+<p>
+भिन्न में ऊपर की संख्या <b>अंश</b> और नीचे की संख्या
+<b>हर</b> कहलाती है।
+</p>
+
+<div class="example">
+
+2/3 + 4/5
+
+<br><br>
+
+LCM of 3 and 5 = 15
+
+<br>
+
+2/3 = 10/15
+
+<br>
+
+4/5 = 12/15
+
+<br><br>
+
+उत्तर = <b>22/15</b>
+
+</div>
+
+<div class="example">
+
+4/2 − 4/3
+
+<br>
+
+= 2 − 4/3
+
+<br>
+
+= 2/3
+
+</div>
+
+<div class="example">
+
+2/5 × 9/4
+
+<br>
+
+= 18/20
+
+<br>
+
+= <b>9/10</b>
+
+</div>
+
+<div class="example">
+
+4/5 ÷ 4/7
+
+<br>
+
+= 4/5 × 7/4
+
+<br>
+
+= <b>7/5</b>
+
+</div>
+
+</div>
+
+
+
+<!-- DECIMAL -->
+
+<div id="m-decimal" class="chapter">
+
+<h3>🔢 Decimals — दशमलव</h3>
+
+<div class="example">
+
+0.5 = 5/10
+
+<br>
+
+0.25 = 25/100
+
+<br>
+
+1.50 + 2.25 = <b>3.75</b>
+
+</div>
+
+</div>
+
+
+
+<!-- RATIO -->
+
+<div id="m-ratio" class="chapter">
+
+<h3>⚖️ Ratio & Proportion</h3>
+
+<div class="example">
+
+2 : 3
+
+<br><br>
+
+अगर 2 लड़के और 3 लड़कियाँ हैं,
+तो लड़के : लड़कियाँ = <b>2 : 3</b>
+
+<br><br>
+
+2 : 3 = 4 : 6
+</div>
+
+</div>
+
+
+
+<!-- PERCENTAGE -->
+
+<div id="m-percentage" class="chapter">
+
+<h3>💯 Percentage</h3>
+
+<div class="example">
+
+Percentage =
+
+(Value ÷ Total) × 100
+
+<br><br>
+
+20% of 250
+
+<br>
+
+= 20/100 × 250
+
+<br>
+
+= <b>50</b>
+
+</div>
+
+</div>
+
+
+
+<!-- PROFIT LOSS -->
+
+<div id="m-profit" class="chapter">
+
+<h3>💰 Profit & Loss — लाभ और हानि</h3>
+
+<div class="example">
+
+CP = Cost Price
+
+<br>
+
+SP = Selling Price
+
+<br><br>
+
+Profit = SP − CP
+
+<br>
+
+Loss = CP − SP
+
+<br><br>
+
+अगर CP = ₹100 और SP = ₹120
+
+<br>
+
+Profit = 120 − 100 = <b>₹20</b>
+
+</div>
+
+</div>
+
+
+
+<!-- DISCOUNT -->
+
+<div id="m-discount" class="chapter">
+
+<h3>🏷️ Discount — छूट</h3>
+
+<div class="example">
+
+Marked Price = ₹500
+
+<br>
+
+Discount = 10%
+
+<br><br>
+
+Discount = 10/100 × 500
+
+<br>
+
+= ₹50
+
+<br><br>
+
+Selling Price = ₹500 − ₹50
+
+<br>
+
+= <b>₹450</b>
+
+</div>
+
+</div>
+
+
+
+<!-- ALGEBRA -->
+
+<div id="m-algebra" class="chapter">
+
+<h3>🔤 Algebra — बीजगणित</h3>
+
+<div class="example">
+
+x + 5 = 12
+
+<br><br>
+
+x = 12 − 5
+
+<br>
+
+x = <b>7</b>
+
+</div>
+
+</div>
+
+
+
+<!-- EQUATION -->
+
+<div id="m-equation" class="chapter">
+
+<h3>🟰 Simple Equations</h3>
+
+<div class="example">
+
+2x = 10
+
+<br>
+
+x = 10 ÷ 2
+
+<br>
+
+x = <b>5</b>
+
+</div>
+
+</div>
+
+
+
+<!-- LINES ANGLES -->
+
+<div id="m-line" class="chapter">
+
+<h3>📏 Lines & Angles</h3>
+
+<div class="example">
+
+Straight Angle = 180°
+
+<br>
+
+Right Angle = 90°
+
+<br>
+
+Acute Angle < 90°
+
+<br>
+
+Obtuse Angle > 90° और < 180°
+</div>
+
+</div>
+
+
+
+<!-- TRIANGLE -->
+
+<div id="m-triangle" class="chapter">
+
+<h3>🔺 Triangle — त्रिभुज</h3>
+
+<div class="example">
+
+Triangle के तीनों angles का योग:
+
+<b>180°</b>
+
+<br><br>
+
+Types:
+
+<br>
+Equilateral
+<br>
+Isosceles
+<br>
+Scalene
+<br>
+Right Angled
+
+</div>
+
+</div>
+
+
+
+<!-- QUADRILATERAL -->
+
+<div id="m-quadrilateral" class="chapter">
+
+<h3>⬛ Quadrilateral — चतुर्भुज</h3>
+
+<div class="example">
+
+Quadrilateral में 4 sides होती हैं।
+
+<br><br>
+
+Square<br>
+Rectangle<br>
+Parallelogram<br>
+Rhombus<br>
+Trapezium
+
+</div>
+
+</div>
+
+
+
+<!-- MENSURATION -->
+
+<div id="m-mensuration" class="chapter">
+
+<h3>📐 Mensuration</h3>
+
+<div class="example">
+
+Rectangle Area = Length × Breadth
+
+<br><br>
+
+Square Area = Side × Side
+
+<br><br>
+
+Rectangle Perimeter = 2(L + B)
+
+<br><br>
+
+Square Perimeter = 4 × Side
+
+</div>
+
+</div>
+
+
+
+<!-- DATA -->
+
+<div id="m-data" class="chapter">
+
+<h3>📊 Data Handling</h3>
+
+<p>
+Data को table, pictograph और bar graph के माध्यम से समझा जा सकता है।
+</p>
+
+<div class="example">
+
+Example:
+
+<br>
+
+Apples = 5
+
+<br>
+
+Mangoes = 8
+
+<br>
+
+Bananas = 6
+
+</div>
+
+</div>
+
+
+
+<!-- SYMMETRY -->
+
+<div id="m-symmetry" class="chapter">
+
+<h3>🪞 Symmetry — सममिति</h3>
+
+<p>
+जब किसी आकृति को एक रेखा से दो समान भागों में बाँटा जा सके,
+तो उसे symmetry कहते हैं।
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- ================================================= -->
+<!-- ENGLISH -->
+<!-- ================================================= -->
 
 <section id="english" class="study-box">
 
@@ -238,218 +880,161 @@ ENGLISH
 
 <h2>📘 English Grammar</h2>
 
-<div class="topic-grid">
+<div class="topic-menu">
 
+<a class="topic-link" href="#e-parts">
+🔤 Parts of Speech
+<span>Noun, Pronoun, Verb आदि</span>
+</a>
 
-<div class="topic-card">
+<a class="topic-link" href="#e-tense">
+⏰ Tenses
+<span>Present, Past, Future</span>
+</a>
 
-<h3>1. Parts of Speech</h3>
+<a class="topic-link" href="#e-modal">
+🔑 Modal Verbs
+<span>Can, Could, May, Must आदि</span>
+</a>
 
-<p><b>Noun</b> — नाम बताने वाला शब्द</p>
+<a class="topic-link" href="#e-voice">
+🔄 Active Passive
+<span>Voice</span>
+</a>
 
-<p><b>Pronoun</b> — Noun के स्थान पर आने वाला शब्द</p>
+<a class="topic-link" href="#e-speech">
+💬 Direct Indirect
+<span>Speech</span>
+</a>
 
-<p><b>Verb</b> — काम/action बताता है</p>
+<a class="topic-link" href="#e-word">
+🔤 Synonyms Antonyms
+<span>शब्द ज्ञान</span>
+</a>
 
-<p><b>Adjective</b> — Noun की विशेषता</p>
+<a class="topic-link" href="#e-sentence">
+📝 Types of Sentence
+<span>Sentence structure</span>
+</a>
 
-<p><b>Adverb</b> — Verb की विशेषता</p>
-
-<p><b>Preposition</b> — संबंध बताता है</p>
-
-<p><b>Conjunction</b> — शब्द/वाक्य जोड़ता है</p>
-
-<p><b>Interjection</b> — अचानक भावना</p>
-
-<p><b>Article</b> — a, an, the</p>
-
-</div>
-
-
-<div class="topic-card">
-
-<h3>Noun</h3>
-
-<p>Common / Proper / Collective / Abstract</p>
-
-<p><b>Singular:</b> boy</p>
-
-<p><b>Plural:</b> boys</p>
-
-<p><b>Gender:</b> Masculine, Feminine, Common, Neuter</p>
-
-</div>
-
-
-<div class="topic-card">
-
-<h3>Pronoun</h3>
-
-<p>I, we, you, he, she, it, they</p>
-
-<p>Example:</p>
-
-<div class="example">
-Ram is a boy.<br>
-<strong>He</strong> is a boy.
-</div>
+<a class="topic-link" href="#e-subject">
+📖 Subject Predicate
+<span>वाक्य के भाग</span>
+</a>
 
 </div>
 
 
-<div class="topic-card">
 
-<h3>Verb</h3>
+<div id="e-parts" class="chapter">
 
-<p>Action या state बताने वाला शब्द।</p>
+<h3>🔤 Parts of Speech</h3>
 
-<div class="example">
-go, eat, play, read, write
-</div>
-
-</div>
-
-
-<div class="topic-card">
-
-<h3>Adjective</h3>
-
-<p>Noun की quality बताता है।</p>
-
-<div class="example">
-Ram is a <b>good</b> boy.
-</div>
+<p><b>Noun:</b> नाम बताने वाला शब्द</p>
+<p><b>Pronoun:</b> Noun के स्थान पर</p>
+<p><b>Verb:</b> काम या अवस्था</p>
+<p><b>Adjective:</b> Noun की विशेषता</p>
+<p><b>Adverb:</b> Verb की विशेषता</p>
+<p><b>Preposition:</b> संबंध बताता है</p>
+<p><b>Conjunction:</b> शब्द/वाक्य जोड़ता है</p>
+<p><b>Interjection:</b> अचानक भावना</p>
+<p><b>Article:</b> A, An, The</p>
 
 </div>
 
 
-<div class="topic-card">
 
-<h3>Adverb</h3>
+<div id="e-tense" class="chapter">
 
-<div class="example">
-He runs <b>fast</b>.
-</div>
+<h3>⏰ Tenses</h3>
 
-</div>
+<table>
 
+<tr>
+<th>Type</th>
+<th>Example</th>
+</tr>
 
-<div class="topic-card">
+<tr>
+<td>Present</td>
+<td>I play.</td>
+</tr>
 
-<h3>Preposition</h3>
+<tr>
+<td>Past</td>
+<td>I played.</td>
+</tr>
 
-<div class="example">
-The book is <b>on</b> the table.
-</div>
+<tr>
+<td>Future</td>
+<td>I will play.</td>
+</tr>
 
-</div>
-
-
-<div class="topic-card">
-
-<h3>Conjunction</h3>
-
-<div class="example">
-Ram <b>and</b> Shyam are friends.
-</div>
-
-</div>
-
-
-<div class="topic-card">
-
-<h3>Interjection</h3>
-
-<div class="example">
-Wow! What a beautiful flower!
-</div>
+</table>
 
 </div>
 
 
-<div class="topic-card">
 
-<h3>Articles</h3>
+<div id="e-modal" class="chapter">
 
-<div class="example">
-<b>A</b> boy<br>
-<b>An</b> apple<br>
-<b>The</b> sun
-</div>
+<h3>🔑 Modal Verbs</h3>
 
-</div>
-
-</div>
-
-
-<h2>⏰ Tenses</h2>
-
-<div class="topic-grid">
-
-<div class="topic-card">
-<h3>Present</h3>
-<p>I play.</p>
-<p>I am playing.</p>
-<p>I have played.</p>
-</div>
-
-<div class="topic-card">
-<h3>Past</h3>
-<p>I played.</p>
-<p>I was playing.</p>
-<p>I had played.</p>
-</div>
-
-<div class="topic-card">
-<h3>Future</h3>
-<p>I will play.</p>
-<p>I will be playing.</p>
-<p>I will have played.</p>
-</div>
-
-</div>
-
-
-<h2>🔑 Modal Verbs</h2>
-
-<div class="topic-grid">
-
-<div class="topic-card">
 <p>Can — ability</p>
-<p>Could — past ability/request</p>
-<p>May — permission/possibility</p>
+<p>Could — past ability / polite request</p>
+<p>May — permission</p>
 <p>Might — possibility</p>
 <p>Must — necessity</p>
 <p>Should — advice</p>
 <p>Would — polite request</p>
-</div>
 
 </div>
 
 
-<h2>🔄 Active & Passive Voice</h2>
+
+<div id="e-voice" class="chapter">
+
+<h3>🔄 Active & Passive Voice</h3>
 
 <div class="example">
 
-<b>Active:</b> Ram eats mango.<br>
+Active: Ram eats mango.
 
-<b>Passive:</b> Mango is eaten by Ram.
+<br><br>
+
+Passive: Mango is eaten by Ram.
+
+</div>
 
 </div>
 
 
-<h2>💬 Direct & Indirect Speech</h2>
+
+<div id="e-speech" class="chapter">
+
+<h3>💬 Direct & Indirect Speech</h3>
 
 <div class="example">
 
-Direct: Ram said, "I am happy."<br>
+Direct:
 
-Indirect: Ram said that he was happy.
+Ram said, "I am happy."
+
+<br><br>
+
+Indirect:
+
+Ram said that he was happy.
+
+</div>
 
 </div>
 
 
-<h2>🔤 Antonyms & Synonyms</h2>
+
+<div id="e-word" class="chapter">
+
+<h3>🔤 Synonyms & Antonyms</h3>
 
 <table>
 
@@ -485,203 +1070,53 @@ Indirect: Ram said that he was happy.
 
 </table>
 
-
-<h2>📝 Types of Sentences</h2>
-
-<div class="topic-grid">
-
-<div class="topic-card">
-<h3>Assertive</h3>
-<p>He is a student.</p>
 </div>
 
-<div class="topic-card">
-<h3>Interrogative</h3>
-<p>Are you ready?</p>
-</div>
 
-<div class="topic-card">
-<h3>Imperative</h3>
-<p>Open the door.</p>
-</div>
 
-<div class="topic-card">
-<h3>Exclamatory</h3>
-<p>What a beautiful day!</p>
-</div>
+<div id="e-sentence" class="chapter">
+
+<h3>📝 Types of Sentence</h3>
+
+<p>Assertive — He is a student.</p>
+
+<p>Interrogative — Are you ready?</p>
+
+<p>Imperative — Open the door.</p>
+
+<p>Exclamatory — What a beautiful day!</p>
 
 </div>
 
 
-<h2>Subject & Predicate</h2>
+
+<div id="e-subject" class="chapter">
+
+<h3>📖 Subject & Predicate</h3>
 
 <div class="example">
 
-<b>Ram</b> / <b>is playing cricket.</b><br><br>
+<b>Ram</b> is playing cricket.
 
-Subject = Ram<br>
+<br><br>
+
+Subject = Ram
+
+<br>
+
 Predicate = is playing cricket
 
 </div>
 
-</section>
-
-
-
-<!-- ================= MATHS ================= -->
-
-<section id="maths" class="study-box">
-
-<div class="section-label">
-MATHEMATICS
-</div>
-
-<h2>➗ Class 6–8 Maths Foundation</h2>
-
-<div class="topic-grid">
-
-
-<div class="topic-card">
-
-<h3>Number System</h3>
-
-<p>Natural Numbers</p>
-<p>Whole Numbers</p>
-<p>Integers</p>
-<p>Fractions</p>
-<p>Decimals</p>
-<p>Rational Numbers</p>
-<p>Prime & Composite Numbers</p>
-
-</div>
-
-
-<div class="topic-card">
-
-<h3>Percentage</h3>
-
-<div class="example">
-
-Percentage =
-(Value / Total) × 100
-
-</div>
-
-</div>
-
-
-<div class="topic-card">
-
-<h3>Profit & Loss</h3>
-
-<div class="example">
-
-Profit = SP − CP<br>
-
-Loss = CP − SP<br>
-
-Profit% = Profit/CP × 100
-
-</div>
-
-</div>
-
-
-<div class="topic-card">
-
-<h3>Discount</h3>
-
-<div class="example">
-
-Discount = MP − SP<br>
-
-Discount% =
-Discount/MP × 100
-
-</div>
-
-</div>
-
-
-<div class="topic-card">
-
-<h3>Ratio & Proportion</h3>
-
-<div class="example">
-
-2 : 3 = 4 : 6
-
-</div>
-
-</div>
-
-
-<div class="topic-card">
-
-<h3>Geometry</h3>
-
-<p>Point</p>
-<p>Line</p>
-<p>Line Segment</p>
-<p>Ray</p>
-<p>Angles</p>
-<p>Triangles</p>
-<p>Quadrilaterals</p>
-
-</div>
-
-</div>
-
-
-<h2>📐 Triangle</h2>
-
-<div class="topic-grid">
-
-<div class="topic-card">
-
-<h3>Triangle Types</h3>
-
-<p>Equilateral</p>
-<p>Isosceles</p>
-<p>Scalene</p>
-<p>Right Angled</p>
-
-</div>
-
-<div class="topic-card">
-
-<h3>Triangle Rule</h3>
-
-<div class="example">
-
-Triangle के तीनों angles का योग =
-
-<b>180°</b>
-
-</div>
-
-</div>
-
-</div>
-
-
-<h2>📏 Mensuration</h2>
-
-<div class="example">
-
-Rectangle Area = Length × Breadth<br>
-
-Square Area = Side × Side<br>
-
-Rectangle Perimeter = 2(L + B)
-
 </div>
 
 </section>
 
 
 
-<!-- ================= SCIENCE ================= -->
+<!-- ================================================= -->
+<!-- SCIENCE -->
+<!-- ================================================= -->
 
 <section id="science" class="study-box">
 
@@ -689,54 +1124,24 @@ Rectangle Perimeter = 2(L + B)
 SCIENCE
 </div>
 
-<h2>🔬 Class 6–8 Science</h2>
+<h2>🔬 Science Study Zone</h2>
 
-<p>
-Science को तीन मुख्य हिस्सों में समझें:
-Biology, Chemistry और Physics.
-</p>
+<div class="topic-menu">
 
-<div class="topic-grid">
+<a class="topic-link" href="#biology">
+🧬 Biology
+<span>जीव विज्ञान</span>
+</a>
 
-<div class="topic-card">
+<a class="topic-link" href="#chemistry">
+⚗️ Chemistry
+<span>रसायन विज्ञान</span>
+</a>
 
-<h3>🧬 Biology</h3>
-
-<p>Cell</p>
-<p>Human Body</p>
-<p>Blood</p>
-<p>Glands</p>
-<p>Eyes</p>
-<p>Organs</p>
-
-</div>
-
-<div class="topic-card">
-
-<h3>⚗️ Chemistry</h3>
-
-<p>Matter</p>
-<p>Acids</p>
-<p>Bases</p>
-<p>Salts</p>
-<p>Metals</p>
-<p>Non-metals</p>
-<p>Chemical Formula</p>
-
-</div>
-
-<div class="topic-card">
-
-<h3>⚡ Physics</h3>
-
-<p>Force</p>
-<p>Motion</p>
-<p>Light</p>
-<p>Sound</p>
-<p>Electricity</p>
-<p>Heat</p>
-
-</div>
+<a class="topic-link" href="#physics">
+⚡ Physics
+<span>भौतिक विज्ञान</span>
+</a>
 
 </div>
 
@@ -744,7 +1149,7 @@ Biology, Chemistry और Physics.
 
 
 
-<!-- ================= BIOLOGY ================= -->
+<!-- BIOLOGY -->
 
 <section id="biology" class="study-box">
 
@@ -752,28 +1157,58 @@ Biology, Chemistry और Physics.
 BIOLOGY
 </div>
 
-<h2>🧬 Biology Basic Concepts</h2>
+<h2>🧬 Biology</h2>
 
-<div class="topic-grid">
+<div class="topic-menu">
 
-<div class="topic-card">
+<a class="topic-link" href="#bio-cell">
+🔬 Cell
+<span>कोशिका</span>
+</a>
 
-<h3>Cell</h3>
+<a class="topic-link" href="#bio-blood">
+🩸 Blood
+<span>रक्त</span>
+</a>
+
+<a class="topic-link" href="#bio-gland">
+🧪 Glands
+<span>ग्रंथियाँ</span>
+</a>
+
+<a class="topic-link" href="#bio-eye">
+👁️ Human Eye
+<span>मानव आँख</span>
+</a>
+
+<a class="topic-link" href="#bio-organ">
+🫀 Human Organs
+<span>मानव अंग</span>
+</a>
+
+</div>
+
+
+
+<div id="bio-cell" class="chapter">
+
+<h3>🔬 Cell — कोशिका</h3>
 
 <p>
-Cell जीवों की मूल संरचनात्मक और क्रियात्मक इकाई है।
+कोशिका जीवों की मूल संरचनात्मक और क्रियात्मक इकाई है।
 </p>
 
-<p>Cell membrane</p>
+<p>Cell Membrane</p>
 <p>Cytoplasm</p>
 <p>Nucleus</p>
 
 </div>
 
 
-<div class="topic-card">
 
-<h3>Human Blood</h3>
+<div id="bio-blood" class="chapter">
+
+<h3>🩸 Blood — रक्त</h3>
 
 <p>RBC</p>
 <p>WBC</p>
@@ -783,20 +1218,22 @@ Cell जीवों की मूल संरचनात्मक और क�
 </div>
 
 
-<div class="topic-card">
 
-<h3>Glands</h3>
+<div id="bio-gland" class="chapter">
 
-<p>Endocrine glands</p>
-<p>Exocrine glands</p>
+<h3>🧪 Glands — ग्रंथियाँ</h3>
+
+<p>Endocrine Glands</p>
+<p>Exocrine Glands</p>
 <p>Hormones</p>
 
 </div>
 
 
-<div class="topic-card">
 
-<h3>Human Eye</h3>
+<div id="bio-eye" class="chapter">
+
+<h3>👁️ Human Eye</h3>
 
 <p>Cornea</p>
 <p>Iris</p>
@@ -807,9 +1244,10 @@ Cell जीवों की मूल संरचनात्मक और क�
 </div>
 
 
-<div class="topic-card">
 
-<h3>Organs</h3>
+<div id="bio-organ" class="chapter">
+
+<h3>🫀 Human Organs</h3>
 
 <p>Heart</p>
 <p>Lungs</p>
@@ -819,13 +1257,11 @@ Cell जीवों की मूल संरचनात्मक और क�
 
 </div>
 
-</div>
-
 </section>
 
 
 
-<!-- ================= CHEMISTRY ================= -->
+<!-- CHEMISTRY -->
 
 <section id="chemistry" class="study-box">
 
@@ -833,72 +1269,117 @@ Cell जीवों की मूल संरचनात्मक और क�
 CHEMISTRY
 </div>
 
-<h2>⚗️ Chemistry Basics</h2>
+<h2>⚗️ Chemistry</h2>
 
-<div class="topic-grid">
+<div class="topic-menu">
 
-<div class="topic-card">
+<a class="topic-link" href="#chem-matter">
+🧊 Matter
+<span>पदार्थ</span>
+</a>
 
-<h3>Matter</h3>
+<a class="topic-link" href="#chem-acid">
+🍋 Acid
+<span>अम्ल</span>
+</a>
 
-<p>Solid</p>
-<p>Liquid</p>
-<p>Gas</p>
+<a class="topic-link" href="#chem-base">
+🧪 Base
+<span>क्षार</span>
+</a>
+
+<a class="topic-link" href="#chem-salt">
+🧂 Salt
+<span>लवण</span>
+</a>
+
+<a class="topic-link" href="#chem-metal">
+🔩 Metals
+<span>धातु</span>
+</a>
+
+<a class="topic-link" href="#chem-element">
+⚛️ Elements
+<span>तत्व</span>
+</a>
 
 </div>
 
-<div class="topic-card">
 
-<h3>Acid</h3>
 
-<p>Acidic substances generally have pH below 7.</p>
+<div id="chem-matter" class="chapter">
+
+<h3>🧊 Matter — पदार्थ</h3>
+
+<p>Solid — ठोस</p>
+<p>Liquid — द्रव</p>
+<p>Gas — गैस</p>
+
+</div>
+
+
+
+<div id="chem-acid" class="chapter">
+
+<h3>🍋 Acids — अम्ल</h3>
+
+<p>
+अम्लीय पदार्थों का pH सामान्यतः 7 से कम होता है।
+</p>
 
 <p>Example: HCl</p>
 
 </div>
 
-<div class="topic-card">
 
-<h3>Base</h3>
 
-<p>Bases generally have pH above 7.</p>
+<div id="chem-base" class="chapter">
+
+<h3>🧪 Bases — क्षार</h3>
+
+<p>
+क्षारीय पदार्थों का pH सामान्यतः 7 से अधिक होता है।
+</p>
 
 <p>Example: NaOH</p>
 
 </div>
 
-<div class="topic-card">
 
-<h3>Salt</h3>
 
-<p>Example:</p>
+<div id="chem-salt" class="chapter">
+
+<h3>🧂 Salts — लवण</h3>
 
 <div class="example">
+
 NaCl = Sodium Chloride
-</div>
-
-</div>
-
-<div class="topic-card">
-
-<h3>Metals</h3>
-
-<p>Iron, Copper, Aluminium, Zinc etc.</p>
-
-</div>
-
-<div class="topic-card">
-
-<h3>Non-metals</h3>
-
-<p>Oxygen, Nitrogen, Carbon, Sulfur etc.</p>
 
 </div>
 
 </div>
 
 
-<h2>⚛️ Elements 1–35</h2>
+
+<div id="chem-metal" class="chapter">
+
+<h3>🔩 Metals & Non-metals</h3>
+
+<p>
+Iron, Copper, Aluminium आदि metals के उदाहरण हैं।
+</p>
+
+<p>
+Oxygen, Nitrogen, Sulfur आदि non-metals के उदाहरण हैं।
+</p>
+
+</div>
+
+
+
+<div id="chem-element" class="chapter">
+
+<h3>⚛️ Elements 1–35</h3>
 
 <table>
 
@@ -906,7 +1387,7 @@ NaCl = Sodium Chloride
 <th>No.</th>
 <th>Element</th>
 <th>Symbol</th>
-<th>Approx. Atomic Mass</th>
+<th>Atomic Mass</th>
 </tr>
 
 <tr><td>1</td><td>Hydrogen</td><td>H</td><td>1.008</td></tr>
@@ -947,16 +1428,13 @@ NaCl = Sodium Chloride
 
 </table>
 
-<p>
-नोट: Atomic mass और electronegativity जैसे data को
-बाद में periodic-table reference के साथ और विस्तृत किया जा सकता है।
-</p>
+</div>
 
 </section>
 
 
 
-<!-- ================= PHYSICS ================= -->
+<!-- PHYSICS -->
 
 <section id="physics" class="study-box">
 
@@ -964,81 +1442,122 @@ NaCl = Sodium Chloride
 PHYSICS
 </div>
 
-<h2>⚡ Physics Basic Concepts</h2>
+<h2>⚡ Physics</h2>
 
-<div class="topic-grid">
+<div class="topic-menu">
 
-<div class="topic-card">
+<a class="topic-link" href="#phy-motion">
+🏃 Motion
+<span>गति</span>
+</a>
 
-<h3>Motion</h3>
+<a class="topic-link" href="#phy-force">
+💪 Force
+<span>बल</span>
+</a>
+
+<a class="topic-link" href="#phy-light">
+💡 Light
+<span>प्रकाश</span>
+</a>
+
+<a class="topic-link" href="#phy-sound">
+🔊 Sound
+<span>ध्वनि</span>
+</a>
+
+<a class="topic-link" href="#phy-heat">
+🌡️ Heat
+<span>ऊष्मा</span>
+</a>
+
+<a class="topic-link" href="#phy-electric">
+⚡ Electricity
+<span>विद्युत</span>
+</a>
+
+</div>
+
+
+
+<div id="phy-motion" class="chapter">
+
+<h3>🏃 Motion — गति</h3>
 
 <p>
-किसी वस्तु की स्थिति समय के साथ बदलती है
-तो उसे motion कहते हैं।
+किसी वस्तु की स्थिति समय के साथ बदलती है तो
+वह motion में मानी जाती है।
 </p>
 
 <div class="example">
-Speed = Distance / Time
-</div>
+
+Speed = Distance ÷ Time
 
 </div>
 
+</div>
 
-<div class="topic-card">
 
-<h3>Force</h3>
+
+<div id="phy-force" class="chapter">
+
+<h3>💪 Force — बल</h3>
 
 <p>
-Force वस्तु की गति या आकार में परिवर्तन कर सकता है।
+बल किसी वस्तु की गति, दिशा या आकार में परिवर्तन कर सकता है।
 </p>
 
 </div>
 
 
-<div class="topic-card">
 
-<h3>Light</h3>
+<div id="phy-light" class="chapter">
+
+<h3>💡 Light — प्रकाश</h3>
 
 <p>Reflection</p>
 <p>Shadows</p>
-<p>Transparent / Opaque</p>
+<p>Transparent</p>
+<p>Opaque</p>
 
 </div>
 
 
-<div class="topic-card">
 
-<h3>Sound</h3>
+<div id="phy-sound" class="chapter">
+
+<h3>🔊 Sound — ध्वनि</h3>
 
 <p>
-Sound vibration से उत्पन्न होती है।
+ध्वनि कंपन से उत्पन्न होती है।
 </p>
 
 </div>
 
 
-<div class="topic-card">
 
-<h3>Heat</h3>
+<div id="phy-heat" class="chapter">
+
+<h3>🌡️ Heat — ऊष्मा</h3>
 
 <p>
-Temperature और heat के basic concepts।
+Temperature, heat और temperature measurement
+के basic concepts।
 </p>
 
 </div>
 
 
-<div class="topic-card">
 
-<h3>Electricity</h3>
+<div id="phy-electric" class="chapter">
 
-<p>Electric circuit</p>
-<p>Cell</p>
+<h3>⚡ Electricity — विद्युत</h3>
+
+<p>Electric Cell</p>
+<p>Electric Circuit</p>
 <p>Switch</p>
 <p>Conductor</p>
 <p>Insulator</p>
-
-</div>
 
 </div>
 
@@ -1046,9 +1565,9 @@ Temperature और heat के basic concepts।
 
 
 
-<!-- ================= PRACTICE ================= -->
+<!-- PRACTICE -->
 
-<section id="practice" class="study-box">
+<section class="study-box">
 
 <div class="section-label">
 PRACTICE
@@ -1057,40 +1576,35 @@ PRACTICE
 <h2>📝 Quick Practice</h2>
 
 <details>
-<summary>English — Parts of Speech</summary>
+<summary>Maths</summary>
+<p>20% of 250 कितना होगा?</p>
+</details>
+
+<details>
+<summary>English</summary>
 <p>Identify the noun: "Ram plays cricket."</p>
 </details>
 
 <details>
-<summary>Maths — Percentage</summary>
-<p>Find 20% of 250.</p>
-</details>
-
-<details>
-<summary>Maths — Profit</summary>
-<p>CP = ₹100, SP = ₹120. Find profit.</p>
-</details>
-
-<details>
-<summary>Science — Biology</summary>
-<p>Name the basic unit of life.</p>
+<summary>Biology</summary>
+<p>जीवन की मूल इकाई क्या है?</p>
 </details>
 
 <details>
 <summary>Chemistry</summary>
-<p>Write the symbol of Oxygen.</p>
+<p>Oxygen का chemical symbol क्या है?</p>
 </details>
 
 <details>
 <summary>Physics</summary>
-<p>Write the formula of speed.</p>
+<p>Speed का formula लिखिए।</p>
 </details>
 
 </section>
 
 
 
-<!-- ================= FUTURE CONTENT ================= -->
+<!-- FUTURE -->
 
 <section class="study-box">
 
@@ -1098,38 +1612,19 @@ PRACTICE
 COMING SOON
 </div>
 
-<h2>📚 More Chapters Will Be Added</h2>
+<h2>📚 More Chapters Coming Soon</h2>
 
 <p>
-इस Study Zone में आगे Class 6, 7 और 8 के लिए
-chapter-wise notes, examples, questions, MCQ,
-practice tests और revision material जोड़ा जाएगा।
+इस page में आगे Class 6, 7 और 8 के प्रत्येक chapter के
+notes, solved examples, MCQ, अभ्यास प्रश्न और test series
+जोड़ी जा सकती है।
 </p>
-
-<div class="topic-grid">
-
-<div class="topic-card">
-<h3>Class 6</h3>
-<p>NCERT-based chapter material</p>
-</div>
-
-<div class="topic-card">
-<h3>Class 7</h3>
-<p>NCERT-based chapter material</p>
-</div>
-
-<div class="topic-card">
-<h3>Class 8</h3>
-<p>NCERT-based chapter material</p>
-</div>
-
-</div>
 
 </section>
 
 
 
-<!-- ================= MOTIVATION ================= -->
+<!-- MOTIVATION -->
 
 <section class="study-box">
 
@@ -1198,9 +1693,7 @@ MOTIVATION
 
 <strong>MAX COACHING CLASSES</strong>
 
-<span>
-Odar • Pindra • Varanasi
-</span>
+<span>Odar • Pindra • Varanasi</span>
 
 </div>
 
@@ -1222,4 +1715,4 @@ new Date().getFullYear();
 </script>
 
 </body>
-  </html>
+              </html>
