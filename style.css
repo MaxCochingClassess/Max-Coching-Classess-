@@ -455,3 +455,470 @@ footer{border-top:1px solid #211e17;padding:25px 0;color:#77736a;font-size:11px}
   transform:translateY(-3px);
   border-color:#e4b844;
 }
+/* =========================================================
+   MAX COACHING CLASSES
+   LIGHT + DARK MODE FIX
+   इसे style.css के सबसे नीचे रखें
+   ========================================================= */
+
+/* ---------- BASIC THEME VARIABLES ---------- */
+
+:root {
+  color-scheme: light dark;
+
+  --page-bg: #080808;
+  --section-bg: #0d0d0d;
+  --card-bg: #151515;
+  --card-bg-2: #1b1b1b;
+
+  --text-main: #ffffff;
+  --text-heading: #ffffff;
+  --text-muted: #c9c9c9;
+
+  --gold: #f4c542;
+  --gold-dark: #d9a91f;
+
+  --border: #343434;
+  --soft-border: #444444;
+
+  --input-bg: #ffffff;
+}
+
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+@media (prefers-color-scheme: dark) {
+
+  body {
+    background: var(--page-bg);
+    color: var(--text-main);
+  }
+
+  .section,
+  .study-section {
+    background: var(--section-bg);
+    color: var(--text-main);
+  }
+
+  .dark-section {
+    background: #080808;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: var(--text-heading);
+  }
+
+  p,
+  li,
+  span {
+    color: var(--text-muted);
+  }
+
+  .card,
+  .study-box,
+  .math-card,
+  .hindi-card,
+  .count-card,
+  .alphabet-card,
+  .faculty,
+  .contact-card {
+    background: var(--card-bg);
+    color: var(--text-main);
+    border-color: var(--border);
+  }
+
+}
+
+
+/* =========================================================
+   LIGHT MODE
+   ========================================================= */
+
+@media (prefers-color-scheme: light) {
+
+  body {
+    background: #f7f7f7 !important;
+    color: #171717 !important;
+  }
+
+  .header {
+    background: #ffffff !important;
+    color: #171717 !important;
+    border-bottom: 1px solid #dddddd;
+  }
+
+  .section,
+  .study-section {
+    background: #f7f7f7 !important;
+    color: #171717 !important;
+  }
+
+  .dark-section {
+    background: #eeeeee !important;
+    color: #171717 !important;
+  }
+
+
+  /* ---------- ALL HEADINGS ---------- */
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #171717 !important;
+  }
+
+  .hero h1 {
+    color: #171717 !important;
+  }
+
+  .hero h1 span,
+  h2 span {
+    color: #c28d00 !important;
+  }
+
+
+  /* ---------- NORMAL TEXT ---------- */
+
+  p {
+    color: #444444 !important;
+  }
+
+  .section-label,
+  .eyebrow {
+    color: #a87500 !important;
+  }
+
+
+  /* ---------- NAVIGATION ---------- */
+
+  .nav-links a {
+    color: #222222 !important;
+  }
+
+  .nav-links a:hover {
+    color: #b27b00 !important;
+  }
+
+  .brand {
+    color: #222222 !important;
+  }
+
+  .brand small {
+    color: #777777 !important;
+  }
+
+
+  /* =====================================================
+     STUDY CARDS
+     ===================================================== */
+
+  .card,
+  .study-box,
+  .math-card,
+  .hindi-card,
+  .count-card,
+  .alphabet-card,
+  .faculty,
+  .contact-card {
+
+    background: #ffffff !important;
+
+    color: #171717 !important;
+
+    border: 1px solid #d8d8d8 !important;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+  }
+
+
+  /* ---------- CARD HEADINGS ---------- */
+
+  .card h3,
+  .study-box h3,
+  .math-card h4,
+  .hindi-card b,
+  .count-card strong,
+  .count-card b,
+  .alphabet-card .capital,
+  .alphabet-card .small,
+  .faculty h3,
+  .contact-card h3 {
+
+    color: #171717 !important;
+  }
+
+
+  /* ---------- CARD TEXT ---------- */
+
+  .card p,
+  .study-box p,
+  .math-card p,
+  .hindi-card span,
+  .count-card p,
+  .count-card span,
+  .faculty p,
+  .contact-card p {
+
+    color: #444444 !important;
+  }
+
+
+  /* =====================================================
+     STUDY HEADING
+     ===================================================== */
+
+  .study-heading small {
+    color: #b27b00 !important;
+  }
+
+  .study-heading h3 {
+    color: #171717 !important;
+  }
+
+  .study-heading p {
+    color: #555555 !important;
+  }
+
+
+  /* =====================================================
+     TABLE CARDS
+     ===================================================== */
+
+  .table-card,
+  .table-item {
+
+    background: #ffffff !important;
+
+    color: #171717 !important;
+
+    border: 1px solid #d5d5d5 !important;
+  }
+
+  .table-card h4,
+  .table-item h4 {
+
+    color: #171717 !important;
+  }
+
+  .table-card p,
+  .table-item p {
+
+    color: #444444 !important;
+  }
+
+
+  /* =====================================================
+     MATH
+     ===================================================== */
+
+  .math-card {
+    background: #ffffff !important;
+  }
+
+  .math-card > div:first-child {
+    color: #b27b00 !important;
+  }
+
+
+  /* =====================================================
+     HINDI
+     ===================================================== */
+
+  .hindi-card {
+    background: #ffffff !important;
+  }
+
+  .hindi-card b {
+    color: #b27b00 !important;
+    font-size: 30px;
+  }
+
+  .hindi-card span {
+    color: #333333 !important;
+  }
+
+
+  /* =====================================================
+     MATRA
+     ===================================================== */
+
+  .matra-section {
+    background: #f4f4f4 !important;
+    border: 1px solid #dddddd !important;
+  }
+
+  .matra-section h3 {
+    color: #171717 !important;
+  }
+
+  .matra-grid span {
+    background: #ffffff !important;
+    color: #171717 !important;
+    border: 1px solid #dddddd !important;
+  }
+
+
+  /* =====================================================
+     COUNTING
+     ===================================================== */
+
+  .count-card {
+    background: #ffffff !important;
+  }
+
+  .count-card strong {
+    color: #b27b00 !important;
+    font-size: 32px;
+  }
+
+  .count-card b {
+    color: #171717 !important;
+  }
+
+
+  /* =====================================================
+     ENGLISH ALPHABET
+     ===================================================== */
+
+  .alphabet-card {
+    background: #ffffff !important;
+  }
+
+  .alphabet-card .capital {
+    color: #b27b00 !important;
+    font-size: 32px;
+    font-weight: 800;
+  }
+
+  .alphabet-card .small {
+    color: #222222 !important;
+  }
+
+  .alphabet-card .picture {
+    color: #333333 !important;
+  }
+
+
+  /* =====================================================
+     TAGS
+     ===================================================== */
+
+  .tags span {
+    background: #f3e8c3 !important;
+    color: #6b4b00 !important;
+    border: 1px solid #dfc77d !important;
+  }
+
+
+  /* =====================================================
+     BUTTONS
+     ===================================================== */
+
+  .btn-outline {
+    color: #222222 !important;
+    border-color: #777777 !important;
+    background: #ffffff !important;
+  }
+
+  .btn-outline:hover {
+    color: #000000 !important;
+    border-color: #b27b00 !important;
+  }
+
+
+  /* =====================================================
+     FACULTY
+     ===================================================== */
+
+  .avatar {
+    background: #f0dfad !important;
+    color: #704d00 !important;
+  }
+
+
+  /* =====================================================
+     FOOTER
+     ===================================================== */
+
+  footer {
+    background: #111111 !important;
+    color: #eeeeee !important;
+  }
+
+  footer strong {
+    color: #ffffff !important;
+  }
+
+  footer span {
+    color: #cccccc !important;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE SAFETY
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .card,
+  .study-box,
+  .math-card,
+  .hindi-card,
+  .count-card,
+  .alphabet-card {
+    color: #171717;
+  }
+
+  .study-box {
+    overflow: hidden;
+  }
+
+  .study-box p {
+    line-height: 1.7;
+  }
+
+}
+
+
+/* =========================================================
+   IMPORTANT:
+   किसी भी पुरानी WHITE TEXT rule को override करने के लिए
+   ========================================================= */
+
+@media (prefers-color-scheme: light) {
+
+  .study-section *,
+  .study-box *,
+  .math-card *,
+  .hindi-card *,
+  .count-card *,
+  .alphabet-card * {
+    text-shadow: none;
+  }
+
+  .study-section h1,
+  .study-section h2,
+  .study-section h3,
+  .study-section h4,
+  .study-section p,
+  .study-section span,
+  .study-section b,
+  .study-section strong {
+    opacity: 1 !important;
+  }
+
+}
