@@ -413,3 +413,45 @@ footer{border-top:1px solid #211e17;padding:25px 0;color:#77736a;font-size:11px}
   }
 
 }
+.study-link-card{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  text-decoration:none;
+  background:#12100c;
+  border:1px solid #4a3a20;
+  padding:18px;
+  border-radius:14px;
+  color:white;
+  transition:.3s;
+}
+
+.study-link-card > span{
+  font-size:32px;
+}
+
+.study-link-card div{
+  flex:1;
+}
+
+.study-link-card strong{
+  display:block;
+  color:#e4b844;
+  font-size:18px;
+}
+
+.study-link-card small{
+  display:block;
+  color:#aaa;
+  margin-top:3px;
+}
+
+.study-link-card b{
+  color:#e4b844;
+  font-size:25px;
+}
+
+.study-link-card:hover{
+  transform:translateY(-3px);
+  border-color:#e4b844;
+}
