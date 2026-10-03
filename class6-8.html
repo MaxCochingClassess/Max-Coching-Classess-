@@ -197,7 +197,133 @@ summary{
   }
 
 }
+/* ===== CLASS 6-8 PAGE FIX ===== */
 
+.study-page,
+.study-page * {
+  box-sizing: border-box;
+}
+
+.study-page {
+  width: 100%;
+  overflow: hidden;
+}
+
+.study-page .container {
+  width: min(1200px, 92%);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.study-intro {
+  width: 100%;
+  text-align: center;
+}
+
+.study-intro h1 {
+  margin: 15px 0;
+  line-height: 1.15;
+  word-break: normal;
+}
+
+.study-intro p {
+  line-height: 1.8;
+}
+
+.subject-menu,
+.topic-menu {
+  width: 100%;
+}
+
+.subject-menu a,
+.topic-link {
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+.study-box {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.chapter {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.chapter table {
+  min-width: 600px;
+}
+
+.chapter .example {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  .study-page {
+    padding: 30px 0;
+  }
+
+  .study-page .container {
+    width: 94%;
+  }
+
+  .study-intro h1 {
+    font-size: 34px;
+  }
+
+  .subject-menu {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .subject-menu a {
+    padding: 14px 8px;
+    font-size: 14px;
+  }
+
+  .study-box {
+    padding: 18px !important;
+    margin: 20px 0;
+    border-radius: 16px;
+  }
+
+  .topic-menu {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .topic-link {
+    padding: 16px;
+  }
+
+  .chapter {
+    padding: 16px !important;
+    margin-top: 20px;
+    border-radius: 14px;
+  }
+
+  .chapter h3 {
+    font-size: 20px;
+  }
+
+  .example {
+    padding: 13px;
+    font-size: 14px;
+  }
+
+  .chapter table {
+    min-width: 580px;
+    font-size: 13px;
+  }
+
+  }
 </style>
 
 </head>
