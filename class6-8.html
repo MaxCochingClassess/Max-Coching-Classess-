@@ -28,10 +28,12 @@
 
 .study-intro h1{
   font-size:clamp(34px,6vw,60px);
+  line-height:1.2;
 }
 
 .study-intro h1 span{
   color:#c89b3c;
+  display:block;
 }
 
 .subject-menu{
@@ -79,6 +81,12 @@
   border-radius:16px;
   border:1px solid #ddd;
   font-weight:700;
+  transition:.2s;
+}
+
+.topic-link:hover{
+  transform:translateY(-3px);
+  box-shadow:0 8px 20px rgba(0,0,0,.08);
 }
 
 .topic-link span{
@@ -95,6 +103,7 @@
   padding:25px;
   border-radius:18px;
   border:1px solid #ddd;
+  scroll-margin-top:90px;
 }
 
 .chapter h3{
@@ -121,8 +130,14 @@
   border-radius:12px;
 }
 
+.table-wrap{
+  width:100%;
+  overflow-x:auto;
+}
+
 table{
   width:100%;
+  min-width:500px;
   border-collapse:collapse;
   margin:20px 0;
   background:#fff;
@@ -165,6 +180,10 @@ summary{
 
 @media(max-width:600px){
 
+  .study-page{
+    padding:35px 0;
+  }
+
   .study-box{
     padding:18px;
   }
@@ -173,15 +192,17 @@ summary{
     padding:18px;
   }
 
+  .study-intro h1{
+    font-size:38px;
+  }
+
 }
 
 </style>
 
 </head>
 
-
 <body>
-
 
 <!-- HEADER -->
 
@@ -190,11 +211,9 @@ summary{
 <div class="container nav">
 
 <a class="brand" href="index.html">
-
 <span class="brand-max">MAX</span>
 <span>COACHING CLASSES</span>
 <small>ODAR • VARANASI</small>
-
 </a>
 
 <nav class="nav-links">
@@ -216,7 +235,6 @@ summary{
 <section class="study-page">
 
 <div class="container">
-
 
 <a href="index.html" class="btn btn-outline back-btn">
 ← Back to MAX Coaching
@@ -250,24 +268,16 @@ chapter-wise study material।
 <div class="subject-menu">
 
 <a href="#english">📘 English</a>
-
 <a href="#maths">➗ Maths</a>
-
 <a href="#science">🔬 Science</a>
-
 <a href="#biology">🧬 Biology</a>
-
 <a href="#chemistry">⚗️ Chemistry</a>
-
 <a href="#physics">⚡ Physics</a>
 
 </div>
 
 
-
-<!-- ================================================= -->
-<!-- MATHS -->
-<!-- ================================================= -->
+<!-- ================= MATHS ================= -->
 
 <section id="maths" class="study-box">
 
@@ -279,12 +289,8 @@ MATHEMATICS
 
 <p>
 जिस chapter को पढ़ना हो उस पर click करें।
-बाद में हर chapter में notes, examples, questions
-और test जोड़े जा सकते हैं।
 </p>
 
-
-<!-- CHAPTER LINKS -->
 
 <div class="topic-menu">
 
@@ -371,9 +377,6 @@ MATHEMATICS
 </div>
 
 
-
-<!-- NUMBER SYSTEM -->
-
 <div id="m-number" class="chapter">
 
 <h3>🔢 Number System</h3>
@@ -384,31 +387,24 @@ MATHEMATICS
 
 <div class="example">
 
-Natural Numbers:
-1, 2, 3, 4, 5...
+Natural Numbers: 1, 2, 3, 4, 5...
 
 <br><br>
 
-Whole Numbers:
-0, 1, 2, 3, 4...
+Whole Numbers: 0, 1, 2, 3, 4...
 
 <br><br>
 
-Prime Numbers:
-2, 3, 5, 7, 11...
+Prime Numbers: 2, 3, 5, 7, 11...
 
 <br><br>
 
-Composite Numbers:
-4, 6, 8, 9, 10...
+Composite Numbers: 4, 6, 8, 9, 10...
 
 </div>
 
 </div>
 
-
-
-<!-- INTEGER -->
 
 <div id="m-integer" class="chapter">
 
@@ -430,9 +426,6 @@ Composite Numbers:
 
 </div>
 
-
-
-<!-- FRACTION -->
 
 <div id="m-fraction" class="chapter">
 
@@ -475,7 +468,7 @@ LCM of 3 and 5 = 15
 
 <br>
 
-= 2/3
+= <b>2/3</b>
 
 </div>
 
@@ -510,9 +503,6 @@ LCM of 3 and 5 = 15
 </div>
 
 
-
-<!-- DECIMAL -->
-
 <div id="m-decimal" class="chapter">
 
 <h3>🔢 Decimals — दशमलव</h3>
@@ -534,9 +524,6 @@ LCM of 3 and 5 = 15
 </div>
 
 
-
-<!-- RATIO -->
-
 <div id="m-ratio" class="chapter">
 
 <h3>⚖️ Ratio & Proportion</h3>
@@ -553,13 +540,11 @@ LCM of 3 and 5 = 15
 <br><br>
 
 2 : 3 = 4 : 6
-</div>
 
 </div>
 
+</div>
 
-
-<!-- PERCENTAGE -->
 
 <div id="m-percentage" class="chapter">
 
@@ -567,9 +552,7 @@ LCM of 3 and 5 = 15
 
 <div class="example">
 
-Percentage =
-
-(Value ÷ Total) × 100
+Percentage = (Value ÷ Total) × 100
 
 <br><br>
 
@@ -587,9 +570,6 @@ Percentage =
 
 </div>
 
-
-
-<!-- PROFIT LOSS -->
 
 <div id="m-profit" class="chapter">
 
@@ -624,9 +604,6 @@ Profit = 120 − 100 = <b>₹20</b>
 </div>
 
 
-
-<!-- DISCOUNT -->
-
 <div id="m-discount" class="chapter">
 
 <h3>🏷️ Discount — छूट</h3>
@@ -660,9 +637,6 @@ Selling Price = ₹500 − ₹50
 </div>
 
 
-
-<!-- ALGEBRA -->
-
 <div id="m-algebra" class="chapter">
 
 <h3>🔤 Algebra — बीजगणित</h3>
@@ -683,9 +657,6 @@ x = <b>7</b>
 
 </div>
 
-
-
-<!-- EQUATION -->
 
 <div id="m-equation" class="chapter">
 
@@ -708,9 +679,6 @@ x = <b>5</b>
 </div>
 
 
-
-<!-- LINES ANGLES -->
-
 <div id="m-line" class="chapter">
 
 <h3>📏 Lines & Angles</h3>
@@ -725,18 +693,16 @@ Right Angle = 90°
 
 <br>
 
-Acute Angle < 90°
+Acute Angle &lt; 90°
 
 <br>
 
-Obtuse Angle > 90° और < 180°
-</div>
+Obtuse Angle &gt; 90° और &lt; 180°
 
 </div>
 
+</div>
 
-
-<!-- TRIANGLE -->
 
 <div id="m-triangle" class="chapter">
 
@@ -766,9 +732,6 @@ Right Angled
 </div>
 
 
-
-<!-- QUADRILATERAL -->
-
 <div id="m-quadrilateral" class="chapter">
 
 <h3>⬛ Quadrilateral — चतुर्भुज</h3>
@@ -789,9 +752,6 @@ Trapezium
 
 </div>
 
-
-
-<!-- MENSURATION -->
 
 <div id="m-mensuration" class="chapter">
 
@@ -818,9 +778,6 @@ Square Perimeter = 4 × Side
 </div>
 
 
-
-<!-- DATA -->
-
 <div id="m-data" class="chapter">
 
 <h3>📊 Data Handling</h3>
@@ -830,10 +787,6 @@ Data को table, pictograph और bar graph के माध्यम से 
 </p>
 
 <div class="example">
-
-Example:
-
-<br>
 
 Apples = 5
 
@@ -850,9 +803,6 @@ Bananas = 6
 </div>
 
 
-
-<!-- SYMMETRY -->
-
 <div id="m-symmetry" class="chapter">
 
 <h3>🪞 Symmetry — सममिति</h3>
@@ -867,10 +817,7 @@ Bananas = 6
 </section>
 
 
-
-<!-- ================================================= -->
-<!-- ENGLISH -->
-<!-- ================================================= -->
+<!-- ================= ENGLISH ================= -->
 
 <section id="english" class="study-box">
 
@@ -925,7 +872,6 @@ ENGLISH
 </div>
 
 
-
 <div id="e-parts" class="chapter">
 
 <h3>🔤 Parts of Speech</h3>
@@ -943,10 +889,11 @@ ENGLISH
 </div>
 
 
-
 <div id="e-tense" class="chapter">
 
 <h3>⏰ Tenses</h3>
+
+<div class="table-wrap">
 
 <table>
 
@@ -974,6 +921,7 @@ ENGLISH
 
 </div>
 
+</div>
 
 
 <div id="e-modal" class="chapter">
@@ -991,7 +939,6 @@ ENGLISH
 </div>
 
 
-
 <div id="e-voice" class="chapter">
 
 <h3>🔄 Active & Passive Voice</h3>
@@ -1007,7 +954,6 @@ Passive: Mango is eaten by Ram.
 </div>
 
 </div>
-
 
 
 <div id="e-speech" class="chapter">
@@ -1031,10 +977,11 @@ Ram said that he was happy.
 </div>
 
 
-
 <div id="e-word" class="chapter">
 
 <h3>🔤 Synonyms & Antonyms</h3>
+
+<div class="table-wrap">
 
 <table>
 
@@ -1072,6 +1019,7 @@ Ram said that he was happy.
 
 </div>
 
+</div>
 
 
 <div id="e-sentence" class="chapter">
@@ -1079,15 +1027,11 @@ Ram said that he was happy.
 <h3>📝 Types of Sentence</h3>
 
 <p>Assertive — He is a student.</p>
-
 <p>Interrogative — Are you ready?</p>
-
 <p>Imperative — Open the door.</p>
-
 <p>Exclamatory — What a beautiful day!</p>
 
 </div>
-
 
 
 <div id="e-subject" class="chapter">
@@ -1113,10 +1057,7 @@ Predicate = is playing cricket
 </section>
 
 
-
-<!-- ================================================= -->
-<!-- SCIENCE -->
-<!-- ================================================= -->
+<!-- ================= SCIENCE ================= -->
 
 <section id="science" class="study-box">
 
@@ -1148,8 +1089,7 @@ SCIENCE
 </section>
 
 
-
-<!-- BIOLOGY -->
+<!-- ================= BIOLOGY ================= -->
 
 <section id="biology" class="study-box">
 
@@ -1189,7 +1129,6 @@ BIOLOGY
 </div>
 
 
-
 <div id="bio-cell" class="chapter">
 
 <h3>🔬 Cell — कोशिका</h3>
@@ -1205,7 +1144,6 @@ BIOLOGY
 </div>
 
 
-
 <div id="bio-blood" class="chapter">
 
 <h3>🩸 Blood — रक्त</h3>
@@ -1216,7 +1154,6 @@ BIOLOGY
 <p>Plasma</p>
 
 </div>
-
 
 
 <div id="bio-gland" class="chapter">
@@ -1230,7 +1167,6 @@ BIOLOGY
 </div>
 
 
-
 <div id="bio-eye" class="chapter">
 
 <h3>👁️ Human Eye</h3>
@@ -1242,7 +1178,6 @@ BIOLOGY
 <p>Retina</p>
 
 </div>
-
 
 
 <div id="bio-organ" class="chapter">
@@ -1260,8 +1195,7 @@ BIOLOGY
 </section>
 
 
-
-<!-- CHEMISTRY -->
+<!-- ================= CHEMISTRY ================= -->
 
 <section id="chemistry" class="study-box">
 
@@ -1306,7 +1240,6 @@ CHEMISTRY
 </div>
 
 
-
 <div id="chem-matter" class="chapter">
 
 <h3>🧊 Matter — पदार्थ</h3>
@@ -1316,7 +1249,6 @@ CHEMISTRY
 <p>Gas — गैस</p>
 
 </div>
-
 
 
 <div id="chem-acid" class="chapter">
@@ -1332,7 +1264,6 @@ CHEMISTRY
 </div>
 
 
-
 <div id="chem-base" class="chapter">
 
 <h3>🧪 Bases — क्षार</h3>
@@ -1346,19 +1277,15 @@ CHEMISTRY
 </div>
 
 
-
 <div id="chem-salt" class="chapter">
 
 <h3>🧂 Salts — लवण</h3>
 
 <div class="example">
-
 NaCl = Sodium Chloride
-
 </div>
 
 </div>
-
 
 
 <div id="chem-metal" class="chapter">
@@ -1376,10 +1303,11 @@ Oxygen, Nitrogen, Sulfur आदि non-metals के उदाहरण है�
 </div>
 
 
-
 <div id="chem-element" class="chapter">
 
 <h3>⚛️ Elements 1–35</h3>
+
+<div class="table-wrap">
 
 <table>
 
@@ -1430,11 +1358,12 @@ Oxygen, Nitrogen, Sulfur आदि non-metals के उदाहरण है�
 
 </div>
 
+</div>
+
 </section>
 
 
-
-<!-- PHYSICS -->
+<!-- ================= PHYSICS ================= -->
 
 <section id="physics" class="study-box">
 
@@ -1479,7 +1408,6 @@ PHYSICS
 </div>
 
 
-
 <div id="phy-motion" class="chapter">
 
 <h3>🏃 Motion — गति</h3>
@@ -1498,7 +1426,6 @@ Speed = Distance ÷ Time
 </div>
 
 
-
 <div id="phy-force" class="chapter">
 
 <h3>💪 Force — बल</h3>
@@ -1508,7 +1435,6 @@ Speed = Distance ÷ Time
 </p>
 
 </div>
-
 
 
 <div id="phy-light" class="chapter">
@@ -1523,7 +1449,6 @@ Speed = Distance ÷ Time
 </div>
 
 
-
 <div id="phy-sound" class="chapter">
 
 <h3>🔊 Sound — ध्वनि</h3>
@@ -1533,7 +1458,6 @@ Speed = Distance ÷ Time
 </p>
 
 </div>
-
 
 
 <div id="phy-heat" class="chapter">
@@ -1546,7 +1470,6 @@ Temperature, heat और temperature measurement
 </p>
 
 </div>
-
 
 
 <div id="phy-electric" class="chapter">
@@ -1564,8 +1487,7 @@ Temperature, heat और temperature measurement
 </section>
 
 
-
-<!-- PRACTICE -->
+<!-- ================= PRACTICE ================= -->
 
 <section class="study-box">
 
@@ -1603,8 +1525,7 @@ PRACTICE
 </section>
 
 
-
-<!-- FUTURE -->
+<!-- ================= COMING SOON ================= -->
 
 <section class="study-box">
 
@@ -1623,8 +1544,7 @@ notes, solved examples, MCQ, अभ्यास प्रश्न और test s
 </section>
 
 
-
-<!-- MOTIVATION -->
+<!-- ================= MOTIVATION ================= -->
 
 <section class="study-box">
 
@@ -1677,13 +1597,14 @@ MOTIVATION
 
 </section>
 
-
 </div>
 
 </section>
 
 </main>
 
+
+<!-- FOOTER -->
 
 <footer>
 
@@ -1698,8 +1619,10 @@ MOTIVATION
 </div>
 
 <div>
+
 © <span id="year"></span>
 Max Coaching Classes
+
 </div>
 
 </div>
@@ -1715,4 +1638,4 @@ new Date().getFullYear();
 </script>
 
 </body>
-              </html>
+  </html>
