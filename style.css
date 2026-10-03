@@ -922,3 +922,77 @@ footer{border-top:1px solid #211e17;padding:25px 0;color:#77736a;font-size:11px}
   }
 
 }
+/* ================= OWNER PHOTO FIX ================= */
+
+.hero-card {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-card .owner-photo {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  min-height: 300px;
+  object-fit: cover;
+  border-radius: 18px;
+  position: relative;
+  z-index: 2;
+  border: 1px solid rgba(244,198,77,.3);
+  box-shadow: 0 20px 80px rgba(0,0,0,.75);
+}
+
+.owner-fallback {
+  display: none;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  min-height: 300px;
+  border: 1px solid rgba(244,198,77,.3);
+  border-radius: 18px;
+  background: #11100d;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.owner-fallback span {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #f4c64d;
+  color: #111;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.owner-fallback strong {
+  color: #f4c64d;
+  letter-spacing: 2px;
+}
+
+.owner-fallback small {
+  color: #c8c1ae;
+  letter-spacing: 2px;
+}
+
+@media(max-width:850px) {
+  .hero-card {
+    order: -1;
+    max-width: 430px;
+    min-height: 300px;
+  }
+
+  .hero-card .owner-photo {
+    max-width: 430px;
+  }
+}
