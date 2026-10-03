@@ -3,27 +3,42 @@
 <head>
 
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
   <meta name="description"
-    content="Max Coaching Classes Odar, Pindra, Varanasi - LKG to 12th, UP Board, CBSE and online competitive exam content.">
-  
+        content="Max Coaching Classes Odar, Pindra, Varanasi - LKG to 12th, UP Board, CBSE and online learning content.">
+
+  <meta name="theme-color"
+        content="#080808">
+
   <title>MAX Coaching Classes | Odar, Varanasi</title>
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
 
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
     rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./style.css">
 
 </head>
 
+
 <body>
 
-<!-- ================= HEADER ================= -->
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
 
 <header class="header">
 
@@ -31,24 +46,60 @@
 
     <a class="brand" href="#home">
 
-      <span class="brand-max">MAX</span>
-      <span>COACHING CLASSES</span>
-      <small>ODAR • VARANASI</small>
+      <span class="brand-max">
+        MAX
+      </span>
+
+      <span>
+        COACHING CLASSES
+      </span>
+
+      <small>
+        ODAR • VARANASI
+      </small>
 
     </a>
 
-    <button class="menu-btn" aria-label="Open menu">
+
+    <button
+      class="menu-btn"
+      type="button"
+      aria-label="Open menu">
+
       ☰
+
     </button>
+
 
     <nav class="nav-links">
 
-      <a href="#about">About</a>
-      <a href="#courses">Courses</a>
-      <a href="#study">Study</a>
-      <a href="#faculty">Faculty</a>
-      <a href="#online">Online Content</a>
-      <a href="#contact" class="nav-cta">Admission Enquiry</a>
+      <a href="#about">
+        About
+      </a>
+
+      <a href="#courses">
+        Courses
+      </a>
+
+      <a href="#study">
+        Study
+      </a>
+
+      <a href="#faculty">
+        Faculty
+      </a>
+
+      <a href="#online">
+        Online Content
+      </a>
+
+      <a
+        href="#contact"
+        class="nav-cta">
+
+        Admission Enquiry
+
+      </a>
 
     </nav>
 
@@ -57,18 +108,30 @@
 </header>
 
 
-<!-- ================= MAIN ================= -->
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
 
 <main>
 
 
-<!-- ================= HERO ================= -->
 
-<section id="home" class="hero">
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section
+  id="home"
+  class="hero">
 
   <div class="hero-glow"></div>
 
+
   <div class="container hero-grid">
+
+
+    <!-- HERO TEXT -->
 
     <div class="hero-copy">
 
@@ -76,42 +139,74 @@
         LKG TO 12th • UP BOARD • CBSE
       </div>
 
+
       <h1>
+
         Learn Better.<br>
-        <span>Perform Better.</span>
+
+        <span>
+          Perform Better.
+        </span>
+
       </h1>
 
+
       <p class="hero-text">
-        Quality classroom learning with focused guidance,
-        strong fundamentals and online learning support for students.
+
+        Quality classroom learning with focused
+        guidance, strong fundamentals and online
+        learning support for students.
+
       </p>
+
 
       <div class="hero-buttons">
 
         <a
           class="btn btn-gold"
           href="tel:+917268807285">
+
           📞 Call for Admission
+
         </a>
+
 
         <a
           class="btn btn-outline"
           href="#courses">
+
           Explore Courses
+
         </a>
 
       </div>
 
+
       <div class="quick-info">
 
         <div>
-          <b>📍</b>
-          <span>Odar, Pindra, Varanasi, Uttar Pradesh</span>
+
+          <b>
+            📍
+          </b>
+
+          <span>
+            Odar, Pindra, Varanasi, Uttar Pradesh
+          </span>
+
         </div>
 
+
         <div>
-          <b>📞</b>
-          <span>7268807285</span>
+
+          <b>
+            📞
+          </b>
+
+          <span>
+            7268807285
+          </span>
+
         </div>
 
       </div>
@@ -119,19 +214,54 @@
     </div>
 
 
-    <!-- OWNER PHOTO -->
+
+    <!-- =================================================
+         OWNER PHOTO
+    ================================================== -->
 
     <div class="hero-card">
 
       <div class="gold-ring"></div>
 
-      <img
-        src="assets/owner.png"
-        alt="Saurabh Verma - Owner, Max Coaching Classes">
+
+      <!--
+        IMAGE PATH FIXED
+
+        First:
+        ./assets/owner.png
+
+        If not found:
+        ./owner.png
+
+        If both not found:
+        SV fallback
+      -->
+
+      <div class="owner-photo">
+
+        <img
+          src="./assets/owner.png"
+          alt="Saurabh Verma - Owner, Max Coaching Classes"
+          class="owner-image"
+          onerror="this.onerror=null;this.src='./owner.png';this.classList.add('fallback-image');">
+
+
+        <div
+          class="owner-fallback"
+          aria-hidden="true">
+
+          SV
+
+        </div>
+
+      </div>
+
 
       <div class="owner-badge">
 
-        <strong>SAURABH VERMA</strong>
+        <strong>
+          SAURABH VERMA
+        </strong>
 
         <span>
           OWNER • MAX COACHING CLASSES
@@ -146,11 +276,17 @@
 </section>
 
 
-<!-- ================= ABOUT ================= -->
 
-<section id="about" class="section">
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section
+  id="about"
+  class="section">
 
   <div class="container split">
+
 
     <div>
 
@@ -158,42 +294,80 @@
         ABOUT MAX
       </div>
 
+
       <h2>
+
         A strong foundation for
-        <span>every learner.</span>
+
+        <span>
+          every learner.
+        </span>
+
       </h2>
 
     </div>
 
+
     <div>
 
       <p>
-        Max Coaching Classes, Odar is a learning centre
-        for students from LKG to Class 12, with support
-        for both UP Board and CBSE learners.
+
+        Max Coaching Classes, Odar is a learning
+        centre for students from LKG to Class 12,
+        with support for both UP Board and CBSE
+        learners.
+
       </p>
 
+
       <p>
-        Along with offline classroom teaching, students
-        can access online study content for
-        competitive-exam preparation across major subjects.
+
+        Along with offline classroom teaching,
+        students can access online study content
+        for competitive-exam preparation across
+        major subjects.
+
       </p>
+
 
       <div class="stats">
 
         <div>
-          <strong>LKG–12</strong>
-          <small>Classes</small>
+
+          <strong>
+            LKG–12
+          </strong>
+
+          <small>
+            Classes
+          </small>
+
         </div>
 
-        <div>
-          <strong>CBSE + UP</strong>
-          <small>Boards</small>
-        </div>
 
         <div>
-          <strong>Offline + Online</strong>
-          <small>Learning</small>
+
+          <strong>
+            CBSE + UP
+          </strong>
+
+          <small>
+            Boards
+          </small>
+
+        </div>
+
+
+        <div>
+
+          <strong>
+            Offline + Online
+          </strong>
+
+          <small>
+            Learning
+          </small>
+
         </div>
 
       </div>
@@ -205,9 +379,14 @@
 </section>
 
 
-<!-- ================= COURSES ================= -->
 
-<section id="courses" class="section dark-section">
+<!-- =====================================================
+     COURSES
+===================================================== -->
+
+<section
+  id="courses"
+  class="section dark-section">
 
   <div class="container">
 
@@ -215,93 +394,200 @@
       COURSES & SUBJECTS
     </div>
 
+
     <h2>
+
       Learning designed around
-      <span>your goals.</span>
+
+      <span>
+        your goals.
+      </span>
+
     </h2>
+
 
     <div class="cards">
 
 
+      <!-- SCHOOL -->
+
       <article class="card">
 
-        <div class="icon">🎓</div>
+        <div class="icon">
+          🎓
+        </div>
 
-        <h3>School Classes</h3>
+
+        <h3>
+          School Classes
+        </h3>
+
 
         <p>
-          LKG to Class 12 with academic support
-          for UP Board and CBSE students.
+
+          LKG to Class 12 with academic
+          support for UP Board and CBSE
+          students.
+
         </p>
 
+
         <div class="tags">
-          <span>Math</span>
-          <span>English</span>
-          <span>Science</span>
-          <span>Hindi</span>
+
+          <span>
+            Math
+          </span>
+
+          <span>
+            English
+          </span>
+
+          <span>
+            Science
+          </span>
+
+          <span>
+            Hindi
+          </span>
+
         </div>
 
       </article>
 
 
+
+      <!-- SENIOR -->
+
       <article class="card">
 
-        <div class="icon">🔬</div>
+        <div class="icon">
+          🔬
+        </div>
 
-        <h3>Senior Classes</h3>
+
+        <h3>
+          Senior Classes
+        </h3>
+
 
         <p>
-          Focused preparation for higher classes
-          with subject-wise guidance.
+
+          Focused preparation for higher
+          classes with subject-wise guidance.
+
         </p>
 
+
         <div class="tags">
-          <span>Physics</span>
-          <span>Chemistry</span>
-          <span>Biology</span>
-          <span>Math</span>
+
+          <span>
+            Physics
+          </span>
+
+          <span>
+            Chemistry
+          </span>
+
+          <span>
+            Biology
+          </span>
+
+          <span>
+            Math
+          </span>
+
         </div>
 
       </article>
 
 
+
+      <!-- COMPUTER -->
+
       <article class="card">
 
-        <div class="icon">💻</div>
+        <div class="icon">
+          💻
+        </div>
 
-        <h3>Computer</h3>
+
+        <h3>
+          Computer
+        </h3>
+
 
         <p>
-          Computer learning and basic computer
-          concepts for students.
+
+          Computer learning and basic
+          computer concepts for students.
+
         </p>
 
+
         <div class="tags">
-          <span>Basics</span>
-          <span>Computer</span>
-          <span>Digital Learning</span>
+
+          <span>
+            Basics
+          </span>
+
+          <span>
+            Computer
+          </span>
+
+          <span>
+            Digital Learning
+          </span>
+
         </div>
 
       </article>
 
 
+
+      <!-- COMPETITIVE -->
+
       <article class="card">
 
-        <div class="icon">🏆</div>
+        <div class="icon">
+          🏆
+        </div>
 
-        <h3>Competitive Exam Content</h3>
+
+        <h3>
+          Competitive Exam Content
+        </h3>
+
 
         <p>
+
           Online content is available for
           competitive-exam preparation.
+
         </p>
 
+
         <div class="tags">
-          <span>Reasoning</span>
-          <span>GK</span>
-          <span>Polity</span>
-          <span>Science</span>
-          <span>Test Series</span>
+
+          <span>
+            Reasoning
+          </span>
+
+          <span>
+            GK
+          </span>
+
+          <span>
+            Polity
+          </span>
+
+          <span>
+            Science
+          </span>
+
+          <span>
+            Test Series
+          </span>
+
         </div>
 
       </article>
@@ -313,349 +599,612 @@
 </section>
 
 
-<!-- ================= STUDY ZONE ================= -->
 
-<section id="study" class="section dark-section">
+<!-- =====================================================
+     STUDY ZONE
+===================================================== -->
+
+<section
+  id="study"
+  class="section dark-section">
 
   <div class="container">
+
 
     <div class="section-label">
       MAX KIDS LEARNING ZONE
     </div>
 
+
     <h2>
+
       बच्चों के लिए
-      <span>Study Material</span>
+
+      <span>
+        Study Material
+      </span>
+
     </h2>
 
+
     <p>
-      अपनी कक्षा चुनें और आसान तरीके से पढ़ाई शुरू करें।
+
+      अपनी कक्षा चुनें और आसान तरीके से
+      पढ़ाई शुरू करें।
+
     </p>
 
+
     <div class="cards">
+
+
 
       <!-- LKG UKG CLASS 1 -->
 
       <article class="card">
 
-        <div class="icon">👶</div>
+        <div class="icon">
+          👶
+        </div>
 
-        <h3>LKG • UKG • CLASS 1</h3>
+
+        <h3>
+          LKG • UKG • CLASS 1
+        </h3>
+
 
         <p>
-          छोटे बच्चों के लिए गिनती, Tables, Hindi,
-          English, मात्राएँ और आसान Maths।
+
+          छोटे बच्चों के लिए गिनती,
+          Tables, Hindi, English,
+          मात्राएँ और आसान Maths।
+
         </p>
 
+
         <div class="tags">
-          <span>Tables 1–100</span>
-          <span>Hindi</span>
-          <span>English</span>
-          <span>Counting</span>
+
+          <span>
+            Tables 1–100
+          </span>
+
+          <span>
+            Hindi
+          </span>
+
+          <span>
+            English
+          </span>
+
+          <span>
+            Counting
+          </span>
+
         </div>
+
 
         <br>
 
-        <a class="btn btn-gold" href="study.html">
+
+        <a
+          class="btn btn-gold"
+          href="study.html">
+
           📚 Study खोलें
+
         </a>
 
       </article>
 
 
-      <!-- CLASS 2 & 3 -->
+
+      <!-- CLASS 2–3 -->
 
       <article class="card">
 
-        <div class="icon">📖</div>
+        <div class="icon">
+          📖
+        </div>
 
-        <h3>CLASS 2 • CLASS 3</h3>
+
+        <h3>
+          CLASS 2 • CLASS 3
+        </h3>
+
 
         <p>
-          बड़ी संख्या, जोड़, घटाना, गुणा, भाग,
-          Tables, बारहखड़ी, English और Hindi।
+
+          बड़ी संख्या, जोड़, घटाना,
+          गुणा, भाग, Tables, बारहखड़ी,
+          English और Hindi।
+
         </p>
 
+
         <div class="tags">
-          <span>Maths</span>
-          <span>Tables</span>
-          <span>Hindi</span>
-          <span>English</span>
+
+          <span>
+            Maths
+          </span>
+
+          <span>
+            Tables
+          </span>
+
+          <span>
+            Hindi
+          </span>
+
+          <span>
+            English
+          </span>
+
         </div>
+
 
         <br>
 
-        <a class="btn btn-gold" href="study23.html">
+
+        <a
+          class="btn btn-gold"
+          href="study23.html">
+
           📖 Class 2–3 Study
+
         </a>
 
       </article>
 
-<!-- CLASS 4-5 STUDY -->
 
-<article class="card">
 
-  <div class="icon">
-    📘
-  </div>
+      <!-- CLASS 4–5 -->
 
-  <h3>
-    Class 4–5 Study Zone
-  </h3>
+      <article class="card">
 
-  <p>
-    Class 4 और 5 के लिए Number System,
-    Fractions, Decimal, BODMAS, Time,
-    Money, Distance और Measurement।
-  </p>
+        <div class="icon">
+          📘
+        </div>
 
-  <div class="tags">
-    <span>Number System</span>
-    <span>Fractions</span>
-    <span>Decimal</span>
-    <span>BODMAS</span>
-  </div>
 
-  <br>
+        <h3>
+          Class 4–5 Study Zone
+        </h3>
 
-  <a
-    class="btn btn-gold"
-    href="class4-5.html">
 
-    📘 Class 4–5 पढ़ें
+        <p>
 
-  </a>
+          Class 4 और 5 के लिए Number System,
+          Fractions, Decimal, BODMAS, Time,
+          Money, Distance और Measurement।
 
-</article>
+        </p>
+
+
+        <div class="tags">
+
+          <span>
+            Number System
+          </span>
+
+          <span>
+            Fractions
+          </span>
+
+          <span>
+            Decimal
+          </span>
+
+          <span>
+            BODMAS
+          </span>
+
+        </div>
+
+
+        <br>
+
+
+        <a
+          class="btn btn-gold"
+          href="class4-5.html">
+
+          📘 Class 4–5 पढ़ें
+
+        </a>
+
+      </article>
+
+
+
       <!-- CLASS 6–8 -->
-<article class="card">
 
-  <div class="icon">🎓</div>
+      <article class="card">
 
-  <h3>Class 6–8 Study Zone</h3>
+        <div class="icon">
+          🎓
+        </div>
 
-  <p>
-    Class 6, 7 और 8 के लिए Maths, English,
-    Science और महत्वपूर्ण Basic Concepts।
-  </p>
 
-  <div class="tags">
-    <span>English</span>
-    <span>Maths</span>
-    <span>Science</span>
-  </div>
+        <h3>
+          Class 6–8 Study Zone
+        </h3>
 
-  <br>
 
-  <a
-    class="btn btn-gold"
-    href="class6-8.html">
-    📚 Class 6–8 पढ़ाई शुरू करें
-  </a>
+        <p>
 
-</article>
-      <!-- ================= CLASS 9 ================= -->
+          Class 6, 7 और 8 के लिए Maths,
+          English, Science और महत्वपूर्ण
+          Basic Concepts।
 
-<article class="card">
+        </p>
 
-  <div class="icon">
-    📘
-  </div>
 
-  <h3>
-    Class 9 Study
-  </h3>
+        <div class="tags">
 
-  <p>
-    Class 9 के लिए Maths, Science,
-    Hindi और English का अध्ययन सामग्री।
-  </p>
+          <span>
+            English
+          </span>
 
-  <div class="tags">
-    <span>Maths</span>
-    <span>Science</span>
-    <span>Hindi</span>
-    <span>English</span>
-  </div>
+          <span>
+            Maths
+          </span>
 
-  <br>
+          <span>
+            Science
+          </span>
 
-  <a
-    class="btn btn-gold"
-    href="class9.html">
+        </div>
 
-    📘 Class 9 शुरू करें
 
-  </a>
+        <br>
 
-</article>
-      <!-- ================= CLASS 10 ================= -->
 
-<article class="card">
+        <a
+          class="btn btn-gold"
+          href="class6-8.html">
 
-  <div class="icon">
-    📕
-  </div>
+          📚 Class 6–8 पढ़ाई शुरू करें
 
-  <h3>
-    Class 10 Study
-  </h3>
+        </a>
 
-  <p>
-    Class 10 के लिए Maths, Science,
-    Hindi और English की अध्ययन सामग्री।
-  </p>
+      </article>
 
-  <div class="tags">
-    <span>Maths</span>
-    <span>Science</span>
-    <span>Hindi</span>
-    <span>English</span>
-  </div>
 
-  <br>
 
-  <a
-    class="btn btn-gold"
-    href="class10.html">
+      <!-- CLASS 9 -->
 
-    📕 Class 10 शुरू करें
+      <article class="card">
 
-  </a>
+        <div class="icon">
+          📘
+        </div>
 
-</article>
-      <!-- ================= CLASS 11 ================= -->
 
-<article class="card">
+        <h3>
+          Class 9 Study
+        </h3>
 
-  <div class="icon">
-    📘
-  </div>
 
-  <h3>
-    Class 11 Study
-  </h3>
+        <p>
 
-  <p>
-    Class 11 के लिए NCERT के अनुसार
-    Maths, Physics, Chemistry, Biology,
-    Hindi और English की अध्ययन सामग्री।
-  </p>
+          Class 9 के लिए Maths, Science,
+          Hindi और English की अध्ययन सामग्री।
 
-  <div class="tags">
-    <span>Maths</span>
-    <span>Physics</span>
-    <span>Chemistry</span>
-    <span>Biology</span>
-    <span>Hindi</span>
-    <span>English</span>
-  </div>
+        </p>
 
-  <br>
 
-  <a
-    class="btn btn-gold"
-    href="class11.html">
+        <div class="tags">
 
-    📘 Class 11 शुरू करें
+          <span>
+            Maths
+          </span>
 
-  </a>
+          <span>
+            Science
+          </span>
 
-</article>
-      <!-- ================= CLASS 12 ================= -->
+          <span>
+            Hindi
+          </span>
 
-<article class="card">
+          <span>
+            English
+          </span>
 
-  <div class="icon">
-    🎓
-  </div>
+        </div>
 
-  <h3>
-    Class 12 Study
-  </h3>
 
-  <p>
-    Class 12 के लिए NCERT के अनुसार
-    Maths, Physics, Chemistry, Biology,
-    Hindi और English की अध्ययन सामग्री।
-  </p>
+        <br>
 
-  <div class="tags">
-    <span>Maths</span>
-    <span>Physics</span>
-    <span>Chemistry</span>
-    <span>Biology</span>
-    <span>Hindi</span>
-    <span>English</span>
-  </div>
 
-  <br>
+        <a
+          class="btn btn-gold"
+          href="class9.html">
 
-  <a
-    class="btn btn-gold"
-    href="class12.html">
+          📘 Class 9 शुरू करें
 
-    🎓 Class 12 शुरू करें
+        </a>
 
-  </a>
+      </article>
 
-</article>
-      
+
+
+      <!-- CLASS 10 -->
+
+      <article class="card">
+
+        <div class="icon">
+          📕
+        </div>
+
+
+        <h3>
+          Class 10 Study
+        </h3>
+
+
+        <p>
+
+          Class 10 के लिए Maths, Science,
+          Hindi और English की अध्ययन सामग्री।
+
+        </p>
+
+
+        <div class="tags">
+
+          <span>
+            Maths
+          </span>
+
+          <span>
+            Science
+          </span>
+
+          <span>
+            Hindi
+          </span>
+
+          <span>
+            English
+          </span>
+
+        </div>
+
+
+        <br>
+
+
+        <a
+          class="btn btn-gold"
+          href="class10.html">
+
+          📕 Class 10 शुरू करें
+
+        </a>
+
+      </article>
+
+
+
+      <!-- CLASS 11 -->
+
+      <article class="card">
+
+        <div class="icon">
+          📗
+        </div>
+
+
+        <h3>
+          Class 11 Study
+        </h3>
+
+
+        <p>
+
+          Class 11 के लिए NCERT के अनुसार
+          Maths, Physics, Chemistry, Biology,
+          Hindi और English की अध्ययन सामग्री।
+
+        </p>
+
+
+        <div class="tags">
+
+          <span>
+            Maths
+          </span>
+
+          <span>
+            Physics
+          </span>
+
+          <span>
+            Chemistry
+          </span>
+
+          <span>
+            Biology
+          </span>
+
+          <span>
+            Hindi
+          </span>
+
+          <span>
+            English
+          </span>
+
+        </div>
+
+
+        <br>
+
+
+        <a
+          class="btn btn-gold"
+          href="class11.html">
+
+          📗 Class 11 शुरू करें
+
+        </a>
+
+      </article>
+
+
+
+      <!-- CLASS 12 -->
+
+      <article class="card">
+
+        <div class="icon">
+          🎓
+        </div>
+
+
+        <h3>
+          Class 12 Study
+        </h3>
+
+
+        <p>
+
+          Class 12 के लिए NCERT के अनुसार
+          Maths, Physics, Chemistry, Biology,
+          Hindi और English की अध्ययन सामग्री।
+
+        </p>
+
+
+        <div class="tags">
+
+          <span>
+            Maths
+          </span>
+
+          <span>
+            Physics
+          </span>
+
+          <span>
+            Chemistry
+          </span>
+
+          <span>
+            Biology
+          </span>
+
+          <span>
+            Hindi
+          </span>
+
+          <span>
+            English
+          </span>
+
+        </div>
+
+
+        <br>
+
+
+        <a
+          class="btn btn-gold"
+          href="class12.html">
+
+          🎓 Class 12 शुरू करें
+
+        </a>
+
+      </article>
+
+
     </div>
 
   </div>
 
 </section>
 
-<!-- ================= END STUDY ZONE ================= -->
 
-<!-- ================= FACULTY ================= -->
 
-<section id="faculty" class="section">
+<!-- =====================================================
+     FACULTY
+===================================================== -->
+
+<section
+  id="faculty"
+  class="section">
 
   <div class="container">
+
 
     <div class="section-label">
       OUR FACULTY
     </div>
 
+
     <h2>
+
       Meet the
-      <span>teaching team.</span>
+
+      <span>
+        teaching team.
+      </span>
+
     </h2>
+
 
     <div class="faculty-grid">
 
 
       <div class="faculty">
 
-        <div class="avatar">SV</div>
+        <div class="avatar">
+          SV
+        </div>
 
-        <h3>Saurabh Sir</h3>
+        <h3>
+          Saurabh Sir
+        </h3>
 
-        <p>English • Biology</p>
-
-      </div>
-
-
-      <div class="faculty">
-
-        <div class="avatar">AS</div>
-
-        <h3>Ajit Sir</h3>
-
-        <p>Mathematics</p>
+        <p>
+          English • Biology
+        </p>
 
       </div>
 
 
       <div class="faculty">
 
-        <div class="avatar">AS</div>
+        <div class="avatar">
+          AS
+        </div>
 
-        <h3>Aman Sir</h3>
+        <h3>
+          Ajit Sir
+        </h3>
 
-        <p>Science • Computer</p>
+        <p>
+          Mathematics
+        </p>
+
+      </div>
+
+
+      <div class="faculty">
+
+        <div class="avatar">
+          AS
+        </div>
+
+        <h3>
+          Aman Sir
+        </h3>
+
+        <p>
+          Science • Computer
+        </p>
 
       </div>
 
@@ -667,11 +1216,17 @@
 </section>
 
 
-<!-- ================= ONLINE ================= -->
 
-<section id="online" class="section online-section">
+<!-- =====================================================
+     ONLINE LEARNING
+===================================================== -->
+
+<section
+  id="online"
+  class="section online-section">
 
   <div class="container online-box">
+
 
     <div>
 
@@ -679,32 +1234,52 @@
         ONLINE LEARNING
       </div>
 
+
       <h2>
+
         Competitive exam preparation,
-        <span>online.</span>
+
+        <span>
+          online.
+        </span>
+
       </h2>
 
+
       <p>
-        Offline coaching is focused on school classes.
-        Competitive-exam study content is available online,
-        including Hindi, Polity, Maths, Reasoning, Science,
-        English, GK  History Polity geography and test series.
+
+        Offline coaching is focused on school
+        classes. Competitive-exam study content
+        is available online, including Hindi,
+        Polity, Maths, Reasoning, Science,
+        English, GK, History, Geography and
+        Test Series.
+
       </p>
 
     </div>
 
+
     <div class="online-list">
 
       <span>✓ Hindi</span>
+
       <span>✓ Polity</span>
+
       <span>✓ Maths</span>
+
       <span>✓ Reasoning</span>
+
       <span>✓ Science</span>
+
       <span>✓ English</span>
+
       <span>✓ GK</span>
+
       <span>✓ History</span>
-      <span>✓ Polity</span>
+
       <span>✓ Geography</span>
+
       <span>✓ Test Series</span>
 
     </div>
@@ -714,11 +1289,17 @@
 </section>
 
 
-<!-- ================= CONTACT ================= -->
 
-<section id="contact" class="section contact-section">
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section
+  id="contact"
+  class="section contact-section">
 
   <div class="container contact-grid">
+
 
     <div>
 
@@ -726,15 +1307,26 @@
         GET IN TOUCH
       </div>
 
+
       <h2>
+
         Start your learning
-        <span>journey.</span>
+
+        <span>
+          journey.
+        </span>
+
       </h2>
 
+
       <p>
-        For admission, course details and class timings,
-        contact Max Coaching Classes.
+
+        For admission, course details and
+        class timings, contact Max Coaching
+        Classes.
+
       </p>
+
 
       <a
         class="big-phone"
@@ -744,22 +1336,35 @@
 
       </a>
 
+
       <p class="address">
+
         📍 Vill & Post: Odar, Pindra,
+
         <br>
+
         Varanasi, Uttar Pradesh
+
       </p>
 
     </div>
 
 
+
     <div class="contact-card">
 
-      <h3>Admission Enquiry</h3>
+      <h3>
+        Admission Enquiry
+      </h3>
+
 
       <p>
-        Call or WhatsApp us for admission information.
+
+        Call or WhatsApp us for admission
+        information.
+
       </p>
+
 
       <a
         class="btn btn-gold full"
@@ -770,6 +1375,7 @@
         WhatsApp Enquiry
 
       </a>
+
 
       <a
         class="btn btn-outline full"
@@ -789,11 +1395,15 @@
 </main>
 
 
-<!-- ================= FOOTER ================= -->
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
 
 <footer>
 
   <div class="container footer">
+
 
     <div>
 
@@ -807,25 +1417,74 @@
 
     </div>
 
+
     <div>
 
-      © <span id="year"></span>
+      ©
+
+      <span id="year"></span>
+
       Max Coaching Classes.
+
       All rights reserved.
 
     </div>
+
 
   </div>
 
 </footer>
 
 
-<script src="script.js"></script>
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="./script.js"></script>
+
 
 <script>
-  document.getElementById("year").textContent =
-    new Date().getFullYear();
+
+  const yearElement =
+    document.getElementById("year");
+
+  if (yearElement) {
+
+    yearElement.textContent =
+      new Date().getFullYear();
+
+  }
+
+
+  /*
+    OWNER IMAGE FALLBACK
+
+    अगर assets/owner.png नहीं मिलता,
+    तो root/owner.png try होगा।
+  */
+
+  document.querySelectorAll(".owner-image").forEach(function(image) {
+
+    image.addEventListener("error", function() {
+
+      this.style.display = "none";
+
+      const fallback =
+        this.parentElement.querySelector(".owner-fallback");
+
+      if (fallback) {
+
+        fallback.style.display = "flex";
+
+      }
+
+    });
+
+  });
+
 </script>
 
+
 </body>
-       </html>
+            </html>
